@@ -1,0 +1,1921 @@
+2024-12-06 15:23:18,706 - root - INFO - Logging is configured.
+2024-12-06 15:23:18,707 - llm_chatbot - INFO - Initialized LLMChatbot with model: qwen2, temperature: 0, max_tokens: 10000, api_url: http://localhost:11434/api/generate
+2024-12-06 15:23:36,106 - __main__ - INFO - Extracted Query Parameters: {'format': None, 'topic': None}
+2024-12-06 15:23:36,106 - __main__ - ERROR - Error generating SPARQL query with LLM: LLMChatbot.generate_response() missing 1 required positional argument: 'context'
+2024-12-06 15:23:36,107 - __main__ - WARNING - Falling back to manual SPARQL query generation.
+2024-12-06 15:23:38,252 - __main__ - INFO - Successfully loaded RDF file: full_metadata_ontology.ttl
+2024-12-06 15:23:38,252 - __main__ - INFO - Graph contains 87624 triples.
+2024-12-06 15:23:38,252 - __main__ - INFO - Executing SPARQL Query:
+
+        PREFIX ex: <http://example.org/ontology/>
+        PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+        PREFIX schema: <https://schema.org/>
+        SELECT ?dataset ?label ?summary ?fileFormat ?url 
+        WHERE {
+            ?dataset a ex:Dataset ;
+                     rdfs:label ?label ;
+                     ex:summary ?summary ;
+                     ex:fileFormat ?fileFormat ;
+                     schema:url ?url .
+            FILTER (REGEX(?label, "None", "i") || REGEX(?summary, "None", "i"))
+        }
+        
+2024-12-06 15:23:39,179 - llm_chatbot - INFO - Closed LLMChatbot session.
+2024-12-06 15:24:09,964 - root - INFO - Logging is configured.
+2024-12-06 15:24:09,964 - llm_chatbot - INFO - Initialized LLMChatbot with model: qwen2, temperature: 0, max_tokens: 10000, api_url: http://localhost:11434/api/generate
+2024-12-06 15:24:17,189 - __main__ - INFO - Extracted Query Parameters: {'format': None, 'topic': None}
+2024-12-06 15:24:17,189 - __main__ - ERROR - Error generating SPARQL query with LLM: LLMChatbot.generate_response() missing 1 required positional argument: 'context'
+2024-12-06 15:24:17,189 - __main__ - WARNING - Falling back to manual SPARQL query generation.
+2024-12-06 15:24:19,326 - __main__ - INFO - Successfully loaded RDF file: full_metadata_ontology.ttl
+2024-12-06 15:24:19,326 - __main__ - INFO - Graph contains 87624 triples.
+2024-12-06 15:24:19,326 - __main__ - INFO - Executing SPARQL Query:
+
+        PREFIX ex: <http://example.org/ontology/>
+        PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+        PREFIX schema: <https://schema.org/>
+        SELECT ?dataset ?label ?summary ?fileFormat ?url 
+        WHERE {
+            ?dataset a ex:Dataset ;
+                     rdfs:label ?label ;
+                     ex:summary ?summary ;
+                     ex:fileFormat ?fileFormat ;
+                     schema:url ?url .
+            FILTER (REGEX(?label, "None", "i") || REGEX(?summary, "None", "i"))
+        }
+        
+2024-12-06 15:24:20,294 - llm_chatbot - INFO - Closed LLMChatbot session.
+2024-12-06 15:57:25,984 - root - INFO - Logging is configured.
+2024-12-06 15:57:25,984 - llm_chatbot - INFO - Initialized LLMChatbot with model: qwen2, temperature: 0, max_tokens: 10000, api_url: http://localhost:11434/api/generate
+2024-12-06 15:57:30,790 - __main__ - INFO - Extracted Query Parameters: {'format': None, 'topic': 'animals'}
+2024-12-06 15:57:30,790 - __main__ - ERROR - Error generating SPARQL query with LLM: LLMChatbot.generate_response() missing 1 required positional argument: 'context'
+2024-12-06 15:57:30,790 - __main__ - WARNING - Falling back to manual SPARQL query generation.
+2024-12-06 15:57:32,939 - __main__ - INFO - Successfully loaded RDF file: full_metadata_ontology.ttl
+2024-12-06 15:57:32,939 - __main__ - INFO - Graph contains 87624 triples.
+2024-12-06 15:57:32,939 - __main__ - INFO - Executing SPARQL Query:
+
+        PREFIX ex: <http://example.org/ontology/>
+        PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+        PREFIX schema: <https://schema.org/>
+        SELECT ?dataset ?label ?summary ?fileFormat ?url 
+        WHERE {
+            ?dataset a ex:Dataset ;
+                     rdfs:label ?label ;
+                     ex:summary ?summary ;
+                     ex:fileFormat ?fileFormat ;
+                     schema:url ?url .
+            FILTER(CONTAINS(LCASE(?summary), "animals") || CONTAINS(LCASE(?label), "animals"))
+        }
+        
+2024-12-06 15:57:33,795 - llm_chatbot - INFO - Closed LLMChatbot session.
+2024-12-06 15:59:06,245 - root - INFO - Logging is configured.
+2024-12-06 15:59:06,245 - llm_chatbot - INFO - Initialized LLMChatbot with model: qwen2, temperature: 0, max_tokens: 10000, api_url: http://localhost:11434/api/generate
+2024-12-06 15:59:09,654 - __main__ - INFO - Extracted Query Parameters: {'format': None, 'topic': 'animals'}
+2024-12-06 15:59:09,654 - __main__ - ERROR - Error generating SPARQL query with LLM: LLMChatbot.generate_response() missing 1 required positional argument: 'context'
+2024-12-06 15:59:09,654 - __main__ - WARNING - Falling back to manual SPARQL query generation.
+2024-12-06 15:59:11,823 - __main__ - INFO - Successfully loaded RDF file: full_metadata_ontology.ttl
+2024-12-06 15:59:11,823 - __main__ - INFO - Graph contains 87624 triples.
+2024-12-06 15:59:11,823 - __main__ - INFO - Executing SPARQL Query:
+
+        PREFIX ex: <http://example.org/ontology/>
+        PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+        PREFIX schema: <https://schema.org/>
+        SELECT ?dataset ?label ?summary ?fileFormat ?url 
+        WHERE {
+            ?dataset a ex:Dataset ;
+                     rdfs:label ?label ;
+                     ex:summary ?summary ;
+                     ex:fileFormat ?fileFormat ;
+                     schema:url ?url .
+            FILTER(CONTAINS(LCASE(?summary), "animals") || CONTAINS(LCASE(?label), "animals"))
+        }
+        
+2024-12-06 15:59:12,676 - llm_chatbot - INFO - Closed LLMChatbot session.
+2024-12-06 15:59:28,582 - root - INFO - Logging is configured.
+2024-12-06 15:59:28,583 - llm_chatbot - INFO - Initialized LLMChatbot with model: qwen2, temperature: 0, max_tokens: 10000, api_url: http://localhost:11434/api/generate
+2024-12-06 15:59:34,766 - __main__ - INFO - Extracted Query Parameters: {'format': None, 'topic': 'animals'}
+2024-12-06 15:59:34,766 - __main__ - ERROR - Error generating SPARQL query with LLM: LLMChatbot.generate_response() missing 1 required positional argument: 'context'
+2024-12-06 15:59:34,766 - __main__ - WARNING - Falling back to manual SPARQL query generation.
+2024-12-06 15:59:36,905 - __main__ - INFO - Successfully loaded RDF file: full_metadata_ontology.ttl
+2024-12-06 15:59:36,905 - __main__ - INFO - Graph contains 87624 triples.
+2024-12-06 15:59:36,905 - __main__ - INFO - Executing SPARQL Query:
+
+        PREFIX ex: <http://example.org/ontology/>
+        PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+        PREFIX schema: <https://schema.org/>
+        SELECT ?dataset ?label ?summary ?fileFormat ?url 
+        WHERE {
+            ?dataset a ex:Dataset ;
+                     rdfs:label ?label ;
+                     ex:summary ?summary ;
+                     ex:fileFormat ?fileFormat ;
+                     schema:url ?url .
+            FILTER(CONTAINS(LCASE(?summary), "animals") || CONTAINS(LCASE(?label), "animals"))
+        }
+        
+2024-12-06 15:59:37,760 - llm_chatbot - INFO - Closed LLMChatbot session.
+2024-12-06 16:00:44,493 - root - INFO - Logging is configured.
+2024-12-06 16:00:44,494 - llm_chatbot - INFO - Initialized LLMChatbot with model: qwen2, temperature: 0, max_tokens: 10000, api_url: http://localhost:11434/api/generate
+2024-12-06 16:00:48,623 - __main__ - INFO - Extracted Query Parameters: {'format': None, 'topic': 'animals'}
+2024-12-06 16:00:59,213 - __main__ - INFO - Successfully loaded RDF file: full_metadata_ontology.ttl
+2024-12-06 16:00:59,213 - __main__ - INFO - Graph contains 87624 triples.
+2024-12-06 16:00:59,213 - __main__ - INFO - Executing SPARQL Query:
+To generate a SPARQL query for finding datasets related to 'dataset about animals' in an RDF graph, we can use the following query:
+
+```sparql
+PREFIX ex: <http://example.org/ex/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <http://schema.org/>
+
+SELECT ?datasetLabel ?description ?fileFormat ?link 
+WHERE {
+  ?dataset a ex:Dataset .
+  ?dataset rdfs:label ?datasetLabel .
+  FILTER (CONTAINS(?datasetLabel, "animals") || CONTAINS(?datasetLabel, "Animal"))
+  
+  ?dataset schema:description ?description .
+  
+  ?dataset ex:fileFormat ?fileFormat .
+  
+  ?dataset schema:url ?link .
+}
+```
+
+**Explanation:**
+
+1. **PREFIX declarations:** These are used to shorten the URLs for properties in the query.
+
+2. **SELECT clause:** We select variables that will be part of our results:
+
+   - `?datasetLabel` - The title of the dataset.
+   - `?description` - The description of the dataset.
+   - `?fileFormat` - The format of the dataset file(s).
+   - `?link` - The URL link to the dataset.
+
+3. **WHERE clause:**
+   
+   This part is composed in RDF pattern syntax:
+
+   - `?dataset a ex:Dataset .`
+     We specify that we are looking for datasets (`ex:Dataset`).
+
+   - `?dataset rdfs:label ?datasetLabel .`
+     We fetch the title of each dataset.
+
+   - `FILTER (CONTAINS(?datasetLabel, "animals") || CONTAINS(?datasetLabel, "Animal"))`
+     This filters datasets whose titles contain 'animals' or 'Animal'.
+
+   - `?dataset schema:description ?description .`
+     We also look for descriptions associated with each dataset.
+
+   - `?dataset ex:fileFormat ?fileFormat .`
+     This fetches the file format(s) of the dataset.
+
+   - `?dataset schema:url ?link .`
+     We retrieve the URLs (if any) linked to each dataset.
+
+
+This query will return datasets containing information about 'animals' in their titles, descriptions, or labels.
+2024-12-06 16:00:59,268 - __main__ - ERROR - Error executing SPARQL query: Expected {SelectQuery | ConstructQuery | DescribeQuery | AskQuery}, found 'To'  (at char 0), (line:1, col:1)
+2024-12-06 16:00:59,413 - llm_chatbot - INFO - Closed LLMChatbot session.
+2024-12-06 16:02:05,551 - root - INFO - Logging is configured.
+2024-12-06 16:02:05,551 - llm_chatbot - INFO - Initialized LLMChatbot with model: qwen2, temperature: 0, max_tokens: 10000, api_url: http://localhost:11434/api/generate
+2024-12-06 16:02:09,024 - __main__ - INFO - Extracted Query Parameters: {'format': None, 'topic': 'animals'}
+2024-12-06 16:02:14,839 - __main__ - INFO - Successfully loaded RDF file: full_metadata_ontology.ttl
+2024-12-06 16:02:14,839 - __main__ - INFO - Graph contains 87624 triples.
+2024-12-06 16:02:14,839 - __main__ - INFO - Executing SPARQL Query:
+PREFIX ex: <http://example.org/animals/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <http://schema.org/>
+
+SELECT DISTINCT ?datasetLabel ?description 
+WHERE {
+  ?dataset a ex:Dataset .
+  ex:Dataset rdfs:label ?datasetLabel .
+  FILTER(regex(?datasetLabel, "Datasets about animals", "i"))
+  
+  OPTIONAL { ?dataset ex:summary ?description }
+}
+2024-12-06 16:02:15,071 - llm_chatbot - INFO - Closed LLMChatbot session.
+2024-12-06 16:07:10,556 - root - INFO - Logging is configured.
+2024-12-06 16:07:10,557 - llm_chatbot - INFO - Initialized LLMChatbot with model: qwen2, temperature: 0, max_tokens: 10000, api_url: http://localhost:11434/api/generate
+2024-12-06 16:07:14,159 - __main__ - INFO - Extracted Query Parameters: {'format': None, 'topic': 'air quality'}
+2024-12-06 16:07:25,118 - __main__ - INFO - Successfully loaded RDF file: full_metadata_ontology.ttl
+2024-12-06 16:07:25,119 - __main__ - INFO - Graph contains 87624 triples.
+2024-12-06 16:07:25,119 - __main__ - INFO - Executing SPARQL Query:
+PREFIX ex: <http://example.com/ex/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+
+SELECT ?datasetLabel ?description ?fileFormat ?url 
+WHERE {
+  ?dataset ex:rdfs:label ?datasetLabel .
+  ?dataset a ex:Dataset .
+  OPTIONAL { ?dataset rdfs:comment ?description . }
+  
+  FILTER (langMatches(lang(?description), "en")) 
+
+  FILTER regex(str(?datasetLabel), "air quality", "i") 
+  UNION 
+  FILTER regex(str(?description), "air quality", "i")
+}
+2024-12-06 16:07:25,203 - __main__ - ERROR - Error executing SPARQL query: Expected SelectQuery, found 'UNION'  (at char 418), (line:14, col:3)
+2024-12-06 16:07:25,350 - llm_chatbot - INFO - Closed LLMChatbot session.
+2024-12-06 16:08:33,820 - root - INFO - Logging is configured.
+2024-12-06 16:08:33,820 - llm_chatbot - INFO - Initialized LLMChatbot with model: qwen2, temperature: 0, max_tokens: 10000, api_url: http://localhost:11434/api/generate
+2024-12-06 16:08:39,443 - __main__ - INFO - Extracted Query Parameters: {'format': None, 'topic': 'air quality'}
+2024-12-06 16:08:42,538 - __main__ - ERROR - Failed to extract valid SPARQL query from LLM response.
+2024-12-06 16:08:42,538 - __main__ - WARNING - Falling back to manual SPARQL query generation.
+2024-12-06 16:08:44,687 - __main__ - INFO - Successfully loaded RDF file: full_metadata_ontology.ttl
+2024-12-06 16:08:44,687 - __main__ - INFO - Graph contains 87624 triples.
+2024-12-06 16:08:44,687 - __main__ - INFO - Executing SPARQL Query:
+
+        PREFIX ex: <http://example.com/ex/>
+        PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+        PREFIX schema: <https://schema.org/>
+
+        SELECT ?datasetLabel ?description ?fileFormat ?url 
+        WHERE {
+        ?dataset a ex:Dataset ;
+                rdfs:label ?datasetLabel ;
+                schema:url ?url ;
+                ex:fileFormat ?fileFormat .
+                
+        OPTIONAL { ?dataset rdfs:comment ?description . }
+
+        FILTER (
+            regex(str(?datasetLabel), "air quality", "i") || 
+            regex(str(?description), "air quality", "i")
+        )
+        }
+
+2024-12-06 16:08:44,923 - llm_chatbot - INFO - Closed LLMChatbot session.
+2024-12-06 16:09:01,869 - root - INFO - Logging is configured.
+2024-12-06 16:09:01,870 - llm_chatbot - INFO - Initialized LLMChatbot with model: qwen2, temperature: 0, max_tokens: 10000, api_url: http://localhost:11434/api/generate
+2024-12-06 16:09:04,573 - __main__ - INFO - Extracted Query Parameters: {'format': None, 'topic': 'animals'}
+2024-12-06 16:09:09,156 - __main__ - INFO - Successfully loaded RDF file: full_metadata_ontology.ttl
+2024-12-06 16:09:09,157 - __main__ - INFO - Graph contains 87624 triples.
+2024-12-06 16:09:09,157 - __main__ - INFO - Executing SPARQL Query:
+PREFIX ex: <http://example.org/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <http://schema.org/>
+
+SELECT DISTINCT ?dataset ?label ?description WHERE {
+    ?dataset a ex:Dataset .
+    ?dataset rdfs:label ?label .
+    FILTER (lang(?label) = 'en' && contains(str(?label), 'animals'))
+    
+    OPTION INSERT {
+        ?dataset schema:description ?description ;
+               rdfs:comment ?descriptionComment .
+        
+        FILTER (lang(?description) = 'en' && contains(str(?description), 'animals'))
+    }
+}
+2024-12-06 16:09:09,240 - __main__ - ERROR - Error executing SPARQL query: Expected SelectQuery, found 'OPTION'  (at char 315), (line:10, col:5)
+2024-12-06 16:09:09,386 - llm_chatbot - INFO - Closed LLMChatbot session.
+2024-12-06 16:09:23,162 - root - INFO - Logging is configured.
+2024-12-06 16:09:23,162 - llm_chatbot - INFO - Initialized LLMChatbot with model: qwen2, temperature: 0, max_tokens: 10000, api_url: http://localhost:11434/api/generate
+2024-12-06 16:09:26,635 - __main__ - INFO - Extracted Query Parameters: {'format': None, 'topic': 'animals'}
+2024-12-06 16:09:32,034 - __main__ - INFO - Successfully loaded RDF file: full_metadata_ontology.ttl
+2024-12-06 16:09:32,034 - __main__ - INFO - Graph contains 87624 triples.
+2024-12-06 16:09:32,034 - __main__ - INFO - Executing SPARQL Query:
+PREFIX ex: <http://example.org/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <http://schema.org/>
+
+SELECT DISTINCT ?dataset ?title ?description ?url
+WHERE {
+  ?dataset a ex:Dataset .
+  OPTIONAL { ?dataset rdfs:label ?title } .
+  FILTER (REGEX(STR(?title), "animals", "i"))
+  
+  # Check if description contains the word 'animals'
+  BIND(IF(EXISTS {?dataset schema:description ?description}, true, false) AS ?hasDescription)
+  FILTER (?hasDescription && REGEX(STR(?description), "animals", "i")) 
+  
+  OPTIONAL { ?dataset schema:url ?url } .
+}
+2024-12-06 16:09:32,273 - llm_chatbot - INFO - Closed LLMChatbot session.
+2024-12-06 16:12:06,063 - root - INFO - Logging is configured.
+2024-12-06 16:12:06,064 - llm_chatbot - INFO - Initialized LLMChatbot with model: qwen2, temperature: 0, max_tokens: 10000, api_url: http://localhost:11434/api/generate
+2024-12-06 16:12:14,995 - __main__ - INFO - Extracted Query Parameters: {'format': None, 'topic': 'animals?'}
+2024-12-06 16:12:19,642 - __main__ - INFO - Successfully loaded RDF file: full_metadata_ontology.ttl
+2024-12-06 16:12:19,642 - __main__ - INFO - Graph contains 87624 triples.
+2024-12-06 16:12:19,643 - __main__ - INFO - Executing SPARQL Query:
+PREFIX ex: <http://example.org/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <http://schema.org/>
+
+SELECT ?datasetLabel ?description 
+WHERE {
+  ?dataset a ex:Dataset .
+  rdfs:label ?datasetLabel .
+  FILTER (REGEX(?datasetLabel, "animals", "i") || REGEX(?description, "animals", "i"))
+}
+2024-12-06 16:12:19,721 - __main__ - ERROR - Error executing SPARQL query: Expected SelectQuery, found 'rdfs'  (at char 194), (line:8, col:3)
+2024-12-06 16:12:19,866 - llm_chatbot - INFO - Closed LLMChatbot session.
+2024-12-06 16:13:25,904 - root - INFO - Logging is configured.
+2024-12-06 16:13:25,905 - llm_chatbot - INFO - Initialized LLMChatbot with model: qwen2, temperature: 0, max_tokens: 10000, api_url: http://localhost:11434/api/generate
+2024-12-06 16:13:29,739 - __main__ - INFO - Extracted Query Parameters: {'format': None, 'topic': 'animals'}
+2024-12-06 16:13:36,249 - __main__ - INFO - Successfully loaded RDF file: full_metadata_ontology.ttl
+2024-12-06 16:13:36,249 - __main__ - INFO - Graph contains 87624 triples.
+2024-12-06 16:13:36,249 - __main__ - INFO - Executing SPARQL Query:
+PREFIX ex: <http://example.org/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <http://schema.org/>
+
+SELECT DISTINCT ?datasetLabel ?datasetDescription ?fileFormatURL (COUNT(?dataset) AS ?totalMatchingDatasets)
+WHERE {
+  ?dataset a ex:Dataset .
+  ?dataset rdfs:label "datasets about animals"@en .
+  OPTIONAL { ?dataset rdfs:comment ?datasetDescription }
+  OPTIONAL { ?dataset schema:url ?fileFormatURL }
+}
+GROUP BY ?datasetLabel ?datasetDescription ?fileFormatURL
+ORDER BY DESC(?totalMatchingDatasets)
+LIMIT 10
+2024-12-06 16:13:36,480 - llm_chatbot - INFO - Closed LLMChatbot session.
+2024-12-06 16:18:38,401 - root - INFO - Logging is configured.
+2024-12-06 16:18:38,401 - llm_chatbot - INFO - Initialized LLMChatbot with model: qwen2, temperature: 0, max_tokens: 10000, api_url: http://localhost:11434/api/generate
+2024-12-06 16:18:42,052 - __main__ - INFO - Extracted Facets: {'format': None, 'topic': 'animals'}
+2024-12-06 16:18:53,534 - __main__ - INFO - Graph contains 87624 triples.
+2024-12-06 16:18:53,534 - __main__ - INFO - Executing SPARQL Query:
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ex: <http://example.org/namespace/>
+PREFIX schema: <https://schema.org/>
+
+SELECT DISTINCT ?label ?summary ?fileFormat ?url
+WHERE {
+  ?dataset a ex:Dataset .
+  
+  OPTIONAL { 
+    ?dataset rdfs:label ?label .
+  }
+  
+  OPTIONAL { 
+    ?dataset ex:summary ?summary .
+  }
+  
+  ?dataset ex:fileFormat ?fileFormat .
+
+  ?dataset schema:url ?url .
+  
+  FILTER (STRSTARTS(STR(?fileFormat), "http://") || STRSTARTS(STR(?fileFormat), "https://"))
+}
+2024-12-06 16:18:53,766 - llm_chatbot - INFO - Closed LLMChatbot session.
+2024-12-06 16:20:24,699 - root - INFO - Logging is configured.
+2024-12-06 16:20:24,699 - llm_chatbot - INFO - Initialized LLMChatbot with model: qwen2, temperature: 0, max_tokens: 10000, api_url: http://localhost:11434/api/generate
+2024-12-06 16:20:26,988 - __main__ - INFO - Extracted Facets: {'format': None, 'topic': 'animals'}
+2024-12-06 16:20:32,564 - __main__ - INFO - Graph contains 87624 triples.
+2024-12-06 16:20:32,564 - __main__ - INFO - Executing SPARQL Query:
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ex: <http://example.com/ex/>
+PREFIX schema: <http://schema.org/>
+
+SELECT DISTINCT ?label ?summary ?fileFormat ?url 
+WHERE {
+    ?dataset a ex:datasetNamespace ;
+              rdfs:label ?label .
+    OPTIONAL { ?dataset ex:summary ?summary . }
+    OPTIONAL { ?dataset ex:fileFormat ?fileFormat . }
+    OPTIONAL { ?dataset schema:url ?url . }
+    FILTER(STRSTARTS(STR(?topic), 'animals'))
+}
+2024-12-06 16:20:32,795 - llm_chatbot - INFO - Closed LLMChatbot session.
+2024-12-06 16:24:25,120 - root - INFO - Logging is configured.
+2024-12-06 16:24:25,120 - llm_chatbot - INFO - Initialized LLMChatbot with model: qwen2, temperature: 0, max_tokens: 10000, api_url: http://localhost:11434/api/generate
+2024-12-06 16:24:30,577 - __main__ - INFO - Extracted Facets: {'format': None, 'topic': 'air quality'}
+2024-12-06 16:24:31,506 - __main__ - INFO - Extracted SPARQL Query:
+PREFIX ex: <http://example.org/airquality#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+
+SELECT DISTINCT ?label ?summary ?fileFormat ?url 
+WHERE {
+  ?dataset rdfs:label ?label .
+  ?dataset ex:summary ?summary .
+  ?dataset ex:fileFormat ?fileFormat .
+  ?dataset schema:url ?url
+}
+2024-12-06 16:24:33,642 - __main__ - INFO - Graph contains 87624 triples.
+2024-12-06 16:24:33,642 - __main__ - INFO - Executing SPARQL Query:
+PREFIX ex: <http://example.org/airquality#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+
+SELECT DISTINCT ?label ?summary ?fileFormat ?url 
+WHERE {
+  ?dataset rdfs:label ?label .
+  ?dataset ex:summary ?summary .
+  ?dataset ex:fileFormat ?fileFormat .
+  ?dataset schema:url ?url
+}
+2024-12-06 16:24:33,861 - llm_chatbot - INFO - Closed LLMChatbot session.
+2024-12-06 16:28:42,045 - root - INFO - Logging is configured.
+2024-12-06 16:28:42,045 - llm_chatbot - INFO - Initialized LLMChatbot with model: qwen2, temperature: 0, max_tokens: 10000, api_url: http://localhost:11434/api/generate
+2024-12-06 16:28:48,828 - __main__ - INFO - Extracted Facets: {'format': None, 'topic': 'animals'}
+2024-12-06 16:28:50,164 - __main__ - INFO - Extracted SPARQL Query:
+PREFIX ex: <http://example.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+
+SELECT ?datasetLabel ?summary ?fileFormat ?url 
+WHERE {
+  ?dataset a ex:Dataset .
+  ?dataset rdfs:label ?datasetLabel .
+  
+  OPTIONAL { ?dataset ex:summary ?summary . }
+2024-12-06 16:28:52,313 - __main__ - INFO - Graph contains 87624 triples.
+2024-12-06 16:28:52,313 - __main__ - INFO - Executing SPARQL Query:
+PREFIX ex: <http://example.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+
+SELECT ?datasetLabel ?summary ?fileFormat ?url 
+WHERE {
+  ?dataset a ex:Dataset .
+  ?dataset rdfs:label ?datasetLabel .
+  
+  OPTIONAL { ?dataset ex:summary ?summary . }
+2024-12-06 16:28:52,395 - __main__ - ERROR - Error executing SPARQL query: Expected SelectQuery, found end of text  (at char 301), (line:10, col:46)
+2024-12-06 16:28:52,539 - llm_chatbot - INFO - Closed LLMChatbot session.
+2024-12-06 16:30:27,102 - root - INFO - Logging is configured.
+2024-12-06 16:30:27,103 - llm_chatbot - INFO - Initialized LLMChatbot with model: qwen2, temperature: 0, max_tokens: 10000, api_url: http://localhost:11434/api/generate
+2024-12-06 16:30:31,068 - __main__ - INFO - Extracted Facets: {'format': None, 'topic': 'air quality'}
+2024-12-06 16:30:34,883 - __main__ - INFO - Extracted SPARQL Query:
+PREFIX ex: <http://example.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+
+SELECT ?datasetLabel ?summary ?fileFormat ?url
+WHERE {
+    ?dataset ex:label ?datasetLabel .
+    ?dataset a ex:Dataset ;
+             rdfs:domain ex:AirQualityDomain ;
+             schema:url ?url .
+    
+    FILTER (STRSTARTS(STR(?datasetLabel), 'air quality') || STRSTARTS(STR(?summary), 'air quality')) .
+
+    OPTION (
+        ?fileFormat ex:fileFormat ;
+                    a ex:FileFormat
+    ) .
+}
+2024-12-06 16:30:37,042 - __main__ - INFO - Graph contains 87624 triples.
+2024-12-06 16:30:37,042 - __main__ - INFO - Executing SPARQL Query:
+PREFIX ex: <http://example.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+
+SELECT ?datasetLabel ?summary ?fileFormat ?url
+WHERE {
+    ?dataset ex:label ?datasetLabel .
+    ?dataset a ex:Dataset ;
+             rdfs:domain ex:AirQualityDomain ;
+             schema:url ?url .
+    
+    FILTER (STRSTARTS(STR(?datasetLabel), 'air quality') || STRSTARTS(STR(?summary), 'air quality')) .
+
+    OPTION (
+        ?fileFormat ex:fileFormat ;
+                    a ex:FileFormat
+    ) .
+}
+2024-12-06 16:30:37,125 - __main__ - ERROR - Error executing SPARQL query: Expected SelectQuery, found 'OPTION'  (at char 445), (line:14, col:5)
+2024-12-06 16:30:37,271 - llm_chatbot - INFO - Closed LLMChatbot session.
+2024-12-06 16:36:46,552 - root - INFO - Logging is configured.
+2024-12-06 16:36:46,552 - llm_chatbot - INFO - Initialized LLMChatbot with model: qwen2, temperature: 0, max_tokens: 10000, api_url: http://localhost:11434/api/generate
+2024-12-06 16:36:50,145 - __main__ - INFO - Extracted Facets: {'format': None, 'topic': 'air quality'}
+2024-12-06 16:36:56,792 - __main__ - INFO - Extracted SPARQL Query:
+PREFIX ex: <http://example.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+
+SELECT DISTINCT ?label ?summary ?fileFormat ?url 
+WHERE {
+  ?dataset a ex:Dataset .
+  
+  OPTIONAL { ?dataset rdfs:label ?label }
+2024-12-06 16:36:58,947 - __main__ - INFO - Graph contains 87624 triples.
+2024-12-06 16:36:58,947 - __main__ - INFO - Executing SPARQL Query:
+PREFIX ex: <http://example.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+
+SELECT DISTINCT ?label ?summary ?fileFormat ?url 
+WHERE {
+  ?dataset a ex:Dataset .
+  
+  OPTIONAL { ?dataset rdfs:label ?label }
+2024-12-06 16:36:59,027 - __main__ - ERROR - Error executing SPARQL query: Expected SelectQuery, found end of text  (at char 261), (line:9, col:42)
+2024-12-06 16:36:59,172 - llm_chatbot - INFO - Closed LLMChatbot session.
+2024-12-06 16:39:48,187 - root - INFO - Logging is configured.
+2024-12-06 16:39:48,188 - llm_chatbot - INFO - Initialized LLMChatbot with model: qwen2, temperature: 0, max_tokens: 10000, api_url: http://localhost:11434/api/generate
+2024-12-06 16:39:56,194 - __main__ - INFO - Extracted Facets: {'format': None, 'topic': 'air quality'}
+2024-12-06 16:39:58,186 - __main__ - INFO - Extracted SPARQL Query:
+PREFIX ex: <http://example.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+
+SELECT DISTINCT ?label ?summary ?fileFormat ?url 
+WHERE {
+  ?dataset rdfs:label ?label .
+  OPTIONAL {?dataset ex:summary ?summary .}
+2024-12-06 16:40:00,347 - __main__ - INFO - Graph contains 87624 triples.
+2024-12-06 16:40:00,347 - __main__ - INFO - Executing SPARQL Query:
+PREFIX ex: <http://example.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+
+SELECT DISTINCT ?label ?summary ?fileFormat ?url 
+WHERE {
+  FILTER (REGEX(LCASE(STR(?label)), "air quality", "i") || REGEX(LCASE(STR(?summary)), "air quality", "i"))
+
+  ?dataset rdfs:label ?label .
+  OPTIONAL {?dataset ex:summary ?summary .}
+2024-12-06 16:40:00,433 - __main__ - ERROR - Error executing SPARQL query: Expected SelectQuery, found end of text  (at char 374), (line:10, col:44)
+2024-12-06 16:40:00,579 - llm_chatbot - INFO - Closed LLMChatbot session.
+2024-12-06 16:41:43,223 - root - INFO - Logging is configured.
+2024-12-06 16:41:43,223 - llm_chatbot - INFO - Initialized LLMChatbot with model: qwen2, temperature: 0, max_tokens: 10000, api_url: http://localhost:11434/api/generate
+2024-12-06 16:41:46,739 - __main__ - INFO - Extracted Facets: {'format': None, 'topic': None}
+2024-12-06 16:41:46,739 - __main__ - ERROR - Error generating SPARQL query with LLM: 'NoneType' object has no attribute 'lower'
+2024-12-06 16:41:46,739 - __main__ - WARNING - Falling back to manual SPARQL query generation.
+2024-12-06 16:41:46,750 - llm_chatbot - INFO - Closed LLMChatbot session.
+2024-12-06 16:42:35,802 - root - INFO - Logging is configured.
+2024-12-06 16:42:35,802 - llm_chatbot - INFO - Initialized LLMChatbot with model: qwen2, temperature: 0, max_tokens: 10000, api_url: http://localhost:11434/api/generate
+2024-12-06 16:42:43,862 - __main__ - INFO - Extracted Facets: {'format': None, 'topic': 'air quality'}
+2024-12-06 16:42:45,737 - __main__ - INFO - Extracted SPARQL Query:
+PREFIX ex: <http://example.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+
+SELECT ?label ?summary ?fileFormat ?url 
+WHERE {
+  ?dataset a ex:Dataset .
+  
+  OPTIONAL {?dataset rdfs:label ?label . FILTER CONTAINS(STR(?label), STR(?topic)) }
+2024-12-06 16:42:47,888 - __main__ - INFO - Graph contains 87624 triples.
+2024-12-06 16:42:47,888 - __main__ - INFO - Executing SPARQL Query:
+PREFIX ex: <http://example.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+
+SELECT ?label ?summary ?fileFormat ?url 
+WHERE {
+  ?dataset a ex:Dataset .
+  
+  OPTIONAL {?dataset rdfs:label ?label . FILTER CONTAINS(STR(?label), STR(?topic)) }
+2024-12-06 16:42:47,970 - __main__ - ERROR - Error executing SPARQL query: Expected SelectQuery, found end of text  (at char 295), (line:9, col:85)
+2024-12-06 16:42:48,119 - llm_chatbot - INFO - Closed LLMChatbot session.
+2024-12-06 19:57:56,043 - root - INFO - Logging is configured.
+2024-12-06 19:57:56,043 - llm_chatbot - INFO - Initialized LLMChatbot with model: qwen2, temperature: 0, max_tokens: 10000, api_url: http://localhost:11434/api/generate
+2024-12-06 19:58:03,886 - __main__ - INFO - Extracted Facets: {'format': 'csv', 'topic': 'air quality', 'publisher': None}
+2024-12-06 19:58:03,886 - __main__ - ERROR - Error generating SPARQL query with LLM: 'NoneType' object has no attribute 'lower'
+2024-12-06 19:58:03,886 - __main__ - WARNING - Falling back to manual SPARQL query generation.
+2024-12-06 19:58:06,040 - __main__ - INFO - Graph contains 87624 triples.
+2024-12-06 19:58:06,040 - __main__ - INFO - Executing SPARQL Query:
+
+    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+    PREFIX ex: <http://example.org/ontology/>
+    PREFIX schema: <https://schema.org/>
+
+    SELECT DISTINCT ?dataset ?label ?summary ?fileFormat ?url ?publisher
+    WHERE {
+      ?dataset a ex:Dataset .
+      OPTIONAL { ?dataset rdfs:label ?label . }
+      OPTIONAL { ?dataset ex:summary ?summary . }
+      OPTIONAL { ?dataset ex:fileFormat ?fileFormat . }
+      OPTIONAL { ?dataset schema:url ?url . }
+      OPTIONAL { ?dataset ex:publisher ?publisher . }
+      FILTER (
+        REGEX(LCASE(STR(?label)), "air quality", "i") || 
+        REGEX(LCASE(STR(?summary)), "air quality", "i")
+      )
+      FILTER(REGEX(LCASE(STR(?fileFormat)), "csv", "i"))
+      
+    }
+    
+2024-12-06 19:58:09,108 - llm_chatbot - INFO - Closed LLMChatbot session.
+2024-12-06 19:58:46,888 - root - INFO - Logging is configured.
+2024-12-06 19:58:46,888 - llm_chatbot - INFO - Initialized LLMChatbot with model: qwen2, temperature: 0, max_tokens: 10000, api_url: http://localhost:11434/api/generate
+2024-12-06 19:58:56,956 - __main__ - INFO - Extracted Facets: {'format': 'csv', 'topic': 'animals csv', 'publisher': None}
+2024-12-06 19:58:56,956 - __main__ - ERROR - Error generating SPARQL query with LLM: 'NoneType' object has no attribute 'lower'
+2024-12-06 19:58:56,956 - __main__ - WARNING - Falling back to manual SPARQL query generation.
+2024-12-06 19:58:59,104 - __main__ - INFO - Graph contains 87624 triples.
+2024-12-06 19:58:59,105 - __main__ - INFO - Executing SPARQL Query:
+
+    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+    PREFIX ex: <http://example.org/ontology/>
+    PREFIX schema: <https://schema.org/>
+
+    SELECT DISTINCT ?dataset ?label ?summary ?fileFormat ?url ?publisher
+    WHERE {
+      ?dataset a ex:Dataset .
+      OPTIONAL { ?dataset rdfs:label ?label . }
+      OPTIONAL { ?dataset ex:summary ?summary . }
+      OPTIONAL { ?dataset ex:fileFormat ?fileFormat . }
+      OPTIONAL { ?dataset schema:url ?url . }
+      OPTIONAL { ?dataset ex:publisher ?publisher . }
+      FILTER (
+        REGEX(LCASE(STR(?label)), "animals csv", "i") || 
+        REGEX(LCASE(STR(?summary)), "animals csv", "i")
+      )
+      FILTER(REGEX(LCASE(STR(?fileFormat)), "csv", "i"))
+      
+    }
+    
+2024-12-06 19:59:02,211 - llm_chatbot - INFO - Closed LLMChatbot session.
+2024-12-06 19:59:09,989 - root - INFO - Logging is configured.
+2024-12-06 19:59:09,989 - llm_chatbot - INFO - Initialized LLMChatbot with model: qwen2, temperature: 0, max_tokens: 10000, api_url: http://localhost:11434/api/generate
+2024-12-06 19:59:15,350 - __main__ - INFO - Extracted Facets: {'format': 'csv', 'topic': 'animals', 'publisher': None}
+2024-12-06 19:59:15,351 - __main__ - ERROR - Error generating SPARQL query with LLM: 'NoneType' object has no attribute 'lower'
+2024-12-06 19:59:15,351 - __main__ - WARNING - Falling back to manual SPARQL query generation.
+2024-12-06 19:59:17,480 - __main__ - INFO - Graph contains 87624 triples.
+2024-12-06 19:59:17,480 - __main__ - INFO - Executing SPARQL Query:
+
+    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+    PREFIX ex: <http://example.org/ontology/>
+    PREFIX schema: <https://schema.org/>
+
+    SELECT DISTINCT ?dataset ?label ?summary ?fileFormat ?url ?publisher
+    WHERE {
+      ?dataset a ex:Dataset .
+      OPTIONAL { ?dataset rdfs:label ?label . }
+      OPTIONAL { ?dataset ex:summary ?summary . }
+      OPTIONAL { ?dataset ex:fileFormat ?fileFormat . }
+      OPTIONAL { ?dataset schema:url ?url . }
+      OPTIONAL { ?dataset ex:publisher ?publisher . }
+      FILTER (
+        REGEX(LCASE(STR(?label)), "animals", "i") || 
+        REGEX(LCASE(STR(?summary)), "animals", "i")
+      )
+      FILTER(REGEX(LCASE(STR(?fileFormat)), "csv", "i"))
+      
+    }
+    
+2024-12-06 19:59:20,588 - llm_chatbot - INFO - Closed LLMChatbot session.
+2024-12-06 20:00:22,533 - root - INFO - Logging is configured.
+2024-12-06 20:00:22,533 - llm_chatbot - INFO - Initialized LLMChatbot with model: qwen2, temperature: 0, max_tokens: 10000, api_url: http://localhost:11434/api/generate
+2024-12-06 20:00:26,199 - __main__ - INFO - Extracted Facets: {'format': None, 'topic': 'animals', 'publisher': None}
+2024-12-06 20:00:34,118 - __main__ - INFO - Extracted SPARQL Query:
+PREFIX ex: <http://example.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT DISTINCT ?dataset ?label ?summary ?fileFormat ?url ?publisher
+WHERE {
+  ?dataset a ex:Dataset .
+  
+  # Filter by topic (case-insensitive)
+  FILTER REGEX(STR(?label), '{topic}
+2024-12-06 20:00:36,266 - __main__ - INFO - Graph contains 87624 triples.
+2024-12-06 20:00:36,266 - __main__ - INFO - Executing SPARQL Query:
+PREFIX ex: <http://example.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT DISTINCT ?dataset ?label ?summary ?fileFormat ?url ?publisher
+WHERE {
+  ?dataset a ex:Dataset .
+  
+  # Filter by topic (case-insensitive)
+  FILTER REGEX(STR(?label), '{topic}
+2024-12-06 20:00:36,347 - __main__ - ERROR - Error executing SPARQL query: Expected SelectQuery, found 'FILTER'  (at char 332), (line:11, col:3)
+2024-12-06 20:00:36,493 - llm_chatbot - INFO - Closed LLMChatbot session.
+2024-12-06 20:01:46,513 - root - INFO - Logging is configured.
+2024-12-06 20:01:46,513 - llm_chatbot - INFO - Initialized LLMChatbot with model: qwen2, temperature: 0, max_tokens: 10000, api_url: http://localhost:11434/api/generate
+2024-12-06 20:01:52,017 - __main__ - INFO - Extracted Facets: {'format': None, 'topic': 'animals?', 'publisher': None}
+2024-12-06 20:01:55,584 - __main__ - INFO - Extracted SPARQL Query:
+PREFIX ex: <http://example.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT DISTINCT ?dataset ?label ?summary ?fileFormat ?url ?publisher
+WHERE {
+  ?dataset a ex:Dataset .
+  
+  OPTIONAL { ?dataset rdfs:label ?label . FILTER (contains(STR(?label), 'animals', true)) }
+2024-12-06 20:01:57,723 - __main__ - INFO - Graph contains 87624 triples.
+2024-12-06 20:01:57,723 - __main__ - INFO - Executing SPARQL Query:
+PREFIX ex: <http://example.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT DISTINCT ?dataset ?label ?summary ?fileFormat ?url ?publisher
+WHERE {
+  FILTER (REGEX(LCASE(STR(?label)), "animals?", "i") || REGEX(LCASE(STR(?summary)), "animals?", "i"))
+
+  ?dataset a ex:Dataset .
+  
+  OPTIONAL { ?dataset rdfs:label ?label . FILTER (contains(STR(?label), 'animals', true)) }
+2024-12-06 20:01:57,814 - __main__ - ERROR - Error executing SPARQL query: Expected SelectQuery, found 'OPTIONAL'  (at char 396), (line:12, col:3)
+2024-12-06 20:01:57,963 - llm_chatbot - INFO - Closed LLMChatbot session.
+2024-12-06 20:03:25,566 - root - INFO - Logging is configured.
+2024-12-06 20:03:25,567 - llm_chatbot - INFO - Initialized LLMChatbot with model: qwen2, temperature: 0, max_tokens: 10000, api_url: http://localhost:11434/api/generate
+2024-12-06 20:03:37,641 - __main__ - INFO - Extracted Facets: {'format': None, 'topic': 'animals?', 'publisher': None}
+2024-12-06 20:03:40,999 - __main__ - INFO - Extracted SPARQL Query:
+PREFIX ex: <http://example.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT DISTINCT ?dataset ?label ?summary ?fileFormat ?url ?publisher
+WHERE {
+  ?dataset a ex:Dataset .
+  OPTIONAL { ?dataset rdfs:label ?label . }
+2024-12-06 20:03:43,148 - __main__ - INFO - Graph contains 87624 triples.
+2024-12-06 20:03:43,148 - __main__ - INFO - Executing SPARQL Query:
+PREFIX ex: <http://example.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT DISTINCT ?dataset ?label ?summary ?fileFormat ?url ?publisher
+WHERE {
+  ?dataset a ex:Dataset .
+  FILTER (REGEX(LCASE(STR(?label)), "animals?", "i") || REGEX(LCASE(STR(?summary)), "animals?", "i"))
+
+  ?dataset a ex:Dataset .
+  OPTIONAL { ?dataset rdfs:label ?label . }
+2024-12-06 20:03:43,235 - __main__ - ERROR - Error executing SPARQL query: Expected SelectQuery, found end of text  (at char 460), (line:12, col:44)
+2024-12-06 20:03:43,383 - llm_chatbot - INFO - Closed LLMChatbot session.
+2024-12-06 20:04:38,195 - root - INFO - Logging is configured.
+2024-12-06 20:04:38,195 - llm_chatbot - INFO - Initialized LLMChatbot with model: qwen2, temperature: 0, max_tokens: 10000, api_url: http://localhost:11434/api/generate
+2024-12-06 20:04:45,569 - __main__ - INFO - Extracted Facets: {'format': None, 'topic': None, 'publisher': None}
+2024-12-06 20:04:50,264 - __main__ - INFO - Extracted SPARQL Query:
+PREFIX ex: <http://example.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT DISTINCT ?dataset ?label ?summary ?fileFormat ?url ?publisher
+WHERE {
+  ?dataset a ex:Dataset .
+  
+  OPTIONAL { 
+    ?dataset rdfs:label ?label . 
+    FILTER (contains(STR(?label), '{topic}
+2024-12-06 20:04:52,394 - __main__ - INFO - Graph contains 87624 triples.
+2024-12-06 20:04:52,394 - __main__ - INFO - Executing SPARQL Query:
+PREFIX ex: <http://example.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT DISTINCT ?dataset ?label ?summary ?fileFormat ?url ?publisher
+WHERE {
+  
+  OPTIONAL { 
+    ?dataset rdfs:label ?label . 
+    FILTER (contains(STR(?label), '{topic}
+2024-12-06 20:04:52,476 - __main__ - ERROR - Error executing SPARQL query: Expected SelectQuery, found 'OPTIONAL'  (at char 267), (line:9, col:3)
+2024-12-06 20:04:52,622 - llm_chatbot - INFO - Closed LLMChatbot session.
+2024-12-06 20:04:56,127 - root - INFO - Logging is configured.
+2024-12-06 20:04:56,127 - llm_chatbot - INFO - Initialized LLMChatbot with model: qwen2, temperature: 0, max_tokens: 10000, api_url: http://localhost:11434/api/generate
+2024-12-06 20:04:58,550 - __main__ - INFO - Extracted Facets: {'format': None, 'topic': 'animals', 'publisher': None}
+2024-12-06 20:05:02,488 - __main__ - INFO - Extracted SPARQL Query:
+PREFIX ex: <http://example.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT DISTINCT ?dataset ?label ?summary ?fileFormat ?url ?publisher
+WHERE {
+  ?dataset a ex:Dataset .
+  
+  # Filter datasets related to 'animals'
+  FILTER (STRSTARTS(STR(?label), "animals") || STRSTARTS(STR(?summary), "animals"))
+  
+  # Option for filtering file format if specified ('None' is considered as wildcard)
+  OPTIONAL { 
+    ?dataset ex:fileFormat ?fileFormat .
+    FILTER (?fileFormat = 'None') 
+   }
+2024-12-06 20:05:04,665 - __main__ - INFO - Graph contains 87624 triples.
+2024-12-06 20:05:04,665 - __main__ - INFO - Executing SPARQL Query:
+PREFIX ex: <http://example.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT DISTINCT ?dataset ?label ?summary ?fileFormat ?url ?publisher
+WHERE {
+  FILTER (REGEX(LCASE(STR(?label)), "animals", "i") || REGEX(LCASE(STR(?summary)), "animals", "i"))
+
+  ?dataset a ex:Dataset .
+  
+  # Filter datasets related to 'animals'
+  FILTER (STRSTARTS(STR(?label), "animals") || STRSTARTS(STR(?summary), "animals"))
+  
+  # Option for filtering file format if specified ('None' is considered as wildcard)
+  OPTIONAL { 
+    ?dataset ex:fileFormat ?fileFormat .
+    FILTER (?fileFormat = 'None') 
+   }
+2024-12-06 20:05:04,759 - __main__ - ERROR - Error executing SPARQL query: Expected SelectQuery, found end of text  (at char 699), (line:19, col:5)
+2024-12-06 20:05:04,905 - llm_chatbot - INFO - Closed LLMChatbot session.
+2024-12-06 20:05:39,866 - root - INFO - Logging is configured.
+2024-12-06 20:05:39,866 - llm_chatbot - INFO - Initialized LLMChatbot with model: qwen2, temperature: 0, max_tokens: 10000, api_url: http://localhost:11434/api/generate
+2024-12-06 20:05:48,777 - __main__ - INFO - Extracted Facets: {'format': None, 'topic': None, 'publisher': None}
+2024-12-06 20:05:51,677 - __main__ - INFO - Extracted SPARQL Query:
+PREFIX ex: <http://example.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT DISTINCT ?dataset ?label ?summary ?fileFormat ?url ?publisher
+WHERE {
+  ?dataset a ex:Dataset .
+  
+  OPTIONAL { ?dataset rdfs:label ?label . FILTER (contains(STR(?label), '{topic}
+2024-12-06 20:05:53,820 - __main__ - INFO - Graph contains 87624 triples.
+2024-12-06 20:05:53,820 - __main__ - INFO - Executing SPARQL Query:
+PREFIX ex: <http://example.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT DISTINCT ?dataset ?label ?summary ?fileFormat ?url ?publisher
+WHERE {
+  
+  OPTIONAL { ?dataset rdfs:label ?label . FILTER (contains(STR(?label), '{topic}
+2024-12-06 20:05:53,900 - __main__ - ERROR - Error executing SPARQL query: Expected SelectQuery, found 'OPTIONAL'  (at char 267), (line:9, col:3)
+2024-12-06 20:05:54,048 - llm_chatbot - INFO - Closed LLMChatbot session.
+2024-12-06 20:05:55,390 - root - INFO - Logging is configured.
+2024-12-06 20:05:55,390 - llm_chatbot - INFO - Initialized LLMChatbot with model: qwen2, temperature: 0, max_tokens: 10000, api_url: http://localhost:11434/api/generate
+2024-12-06 20:06:21,036 - llm_chatbot - INFO - Closed LLMChatbot session.
+2024-12-06 20:06:22,526 - root - INFO - Logging is configured.
+2024-12-06 20:06:22,526 - llm_chatbot - INFO - Initialized LLMChatbot with model: qwen2, temperature: 0, max_tokens: 10000, api_url: http://localhost:11434/api/generate
+2024-12-06 20:06:23,849 - llm_chatbot - INFO - Closed LLMChatbot session.
+2024-12-06 20:06:50,236 - root - INFO - Logging is configured.
+2024-12-06 20:06:50,237 - llm_chatbot - INFO - Initialized LLMChatbot with model: qwen2, temperature: 0, max_tokens: 10000, api_url: http://localhost:11434/api/generate
+2024-12-06 20:06:59,445 - __main__ - INFO - Extracted Facets: {'format': None, 'topic': 'animals?', 'publisher': None}
+2024-12-06 20:07:03,542 - __main__ - INFO - Extracted SPARQL Query:
+PREFIX ex: <http://example.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT DISTINCT ?dataset ?label ?summary ?fileFormat ?url ?publisher
+WHERE {
+  ?dataset a ex:Dataset .
+  
+  # Include filters for topic, format and publisher if specified (replace 'animals?' with the user-provided topic)
+  FILTER(
+    LANGMATCHES(LANG(?label), "en") && 
+    STRSTARTS(STR(?label), "animals?") ||
+    LANGMATCHES(LANG(?summary), "en") && 
+    STRSTARTS(STR(?summary), "animals?")
+  )
+
+  # Include optional fields with filters
+  OPTIONAL { ?dataset rdfs:label ?label . }
+2024-12-06 20:07:05,675 - __main__ - INFO - Graph contains 87624 triples.
+2024-12-06 20:07:05,675 - __main__ - INFO - Executing SPARQL Query:
+PREFIX ex: <http://example.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT DISTINCT ?dataset ?label ?summary ?fileFormat ?url ?publisher
+WHERE {
+  FILTER (REGEX(LCASE(STR(?label)), "animals?", "i") || REGEX(LCASE(STR(?summary)), "animals?", "i"))
+
+  ?dataset a ex:Dataset .
+  
+  # Include filters for topic, format and publisher if specified (replace 'animals?' with the user-provided topic)
+  FILTER(
+    LANGMATCHES(LANG(?label), "en") && 
+    STRSTARTS(STR(?label), "animals?") ||
+    LANGMATCHES(LANG(?summary), "en") && 
+    STRSTARTS(STR(?summary), "animals?")
+  )
+
+  # Include optional fields with filters
+  OPTIONAL { ?dataset rdfs:label ?label . }
+2024-12-06 20:07:05,771 - __main__ - ERROR - Error executing SPARQL query: Expected SelectQuery, found end of text  (at char 773), (line:21, col:44)
+2024-12-06 20:07:05,918 - llm_chatbot - INFO - Closed LLMChatbot session.
+2024-12-09 13:18:47,249 - root - INFO - Logging is configured.
+2024-12-09 13:18:47,249 - llm_chatbot - INFO - Initialized LLMChatbot with model: qwen2, temperature: 0, max_tokens: 10000, api_url: http://localhost:11434/api/generate
+2024-12-09 13:18:57,695 - __main__ - INFO - Extracted Facets: {'format': 'csv', 'topic': 'air quality', 'publisher': None}
+2024-12-09 13:19:05,683 - __main__ - INFO - Extracted SPARQL Query:
+PREFIX ex: <http://example.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT DISTINCT ?dataset ?label ?summary ?fileFormat ?url ?publisher
+WHERE {
+  ?dataset a ex:Dataset .
+  OPTIONAL { ?dataset rdfs:label ?label . }
+2024-12-09 13:19:07,813 - __main__ - INFO - Graph contains 87624 triples.
+2024-12-09 13:19:07,813 - __main__ - INFO - Executing SPARQL Query:
+PREFIX ex: <http://example.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT DISTINCT ?dataset ?label ?summary ?fileFormat ?url ?publisher
+WHERE {
+  FILTER (REGEX(LCASE(STR(?label)), "air quality", "i") || REGEX(LCASE(STR(?summary)), "air quality", "i"))
+  FILTER(REGEX(LCASE(STR(?fileFormat)), "csv", "i"))
+
+  ?dataset a ex:Dataset .
+  OPTIONAL { ?dataset rdfs:label ?label . }
+2024-12-09 13:19:07,887 - __main__ - ERROR - Error executing SPARQL query: Expected SelectQuery, found end of text  (at char 493), (line:12, col:44)
+2024-12-09 13:19:08,034 - llm_chatbot - INFO - Closed LLMChatbot session.
+2024-12-09 18:25:42,672 - root - INFO - Logging is configured.
+2024-12-09 18:25:42,672 - llm_chatbot - INFO - Initialized LLMChatbot with model: qwen2, temperature: 0, max_tokens: 10000, api_url: http://localhost:11434/api/generate
+2024-12-09 18:27:11,436 - llm_chatbot - INFO - Closed LLMChatbot session.
+2024-12-09 18:27:12,608 - root - INFO - Logging is configured.
+2024-12-09 18:27:12,608 - llm_chatbot - INFO - Initialized LLMChatbot with model: qwen2, temperature: 0, max_tokens: 10000, api_url: http://localhost:11434/api/generate
+2024-12-09 18:27:28,486 - llm_chatbot - INFO - Closed LLMChatbot session.
+2024-12-09 18:27:29,362 - root - INFO - Logging is configured.
+2024-12-09 18:27:29,362 - llm_chatbot - INFO - Initialized LLMChatbot with model: qwen2, temperature: 0, max_tokens: 10000, api_url: http://localhost:11434/api/generate
+2024-12-09 18:27:38,630 - llm_chatbot - INFO - Closed LLMChatbot session.
+2024-12-09 18:28:38,144 - root - INFO - Logging is configured.
+2024-12-09 18:28:38,144 - llm_chatbot - INFO - Initialized LLMChatbot with model: mistral, temperature: 0, max_tokens: 10000, api_url: http://localhost:11434/api/generate
+2024-12-09 18:28:39,021 - llm_chatbot - INFO - Closed LLMChatbot session.
+2024-12-09 18:28:56,347 - root - INFO - Logging is configured.
+2024-12-09 18:28:56,348 - llm_chatbot - INFO - Initialized LLMChatbot with model: mistral, temperature: 0.7, max_tokens: 500, api_url: http://localhost:11434/api/generate
+2024-12-09 18:29:07,097 - __main__ - INFO - Extracted Facets: {'format': 'csv', 'topic': 'air quality', 'publisher': None}
+2024-12-09 18:29:22,287 - __main__ - INFO - Extracted SPARQL Query:
+PREFIX ex: <http://example.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT DISTINCT ?dataset ?label ?summary ?fileFormat ?url ?publisher
+WHERE {
+  # Query entities of type ex:Dataset
+  ?dataset a ex:Dataset .
+
+  # Include label, summary, fileFormat, url, and publisher if available
+  OPTIONAL { ?dataset rdfs:label ?label }
+2024-12-09 18:29:24,408 - __main__ - INFO - Graph contains 87624 triples.
+2024-12-09 18:29:24,408 - __main__ - INFO - Executing SPARQL Query:
+PREFIX ex: <http://example.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT DISTINCT ?dataset ?label ?summary ?fileFormat ?url ?publisher
+WHERE {
+  FILTER (REGEX(LCASE(STR(?label)), "air quality", "i") || REGEX(LCASE(STR(?summary)), "air quality", "i"))
+  FILTER(REGEX(LCASE(STR(?fileFormat)), "csv", "i"))
+
+  # Query entities of type ex:Dataset
+  ?dataset a ex:Dataset .
+
+  # Include label, summary, fileFormat, url, and publisher if available
+  OPTIONAL { ?dataset rdfs:label ?label }
+2024-12-09 18:29:24,483 - __main__ - ERROR - Error executing SPARQL query: Expected SelectQuery, found end of text  (at char 602), (line:15, col:42)
+2024-12-09 18:29:24,629 - llm_chatbot - INFO - Closed LLMChatbot session.
+2024-12-09 18:32:07,802 - root - INFO - Logging is configured.
+2024-12-09 18:32:07,802 - llm_chatbot - INFO - Initialized LLMChatbot with model: mistral, temperature: 0.7, max_tokens: 500, api_url: http://localhost:11434/api/generate
+2024-12-09 18:32:15,479 - __main__ - INFO - Extracted Facets: {'format': 'csv', 'topic': 'air quality', 'publisher': None}
+2024-12-09 18:32:18,537 - __main__ - INFO - Extracted SPARQL Query:
+PREFIX ex: <http://example.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?dataset ?label ?summary ?fileFormat ?url ?publisher
+WHERE {
+  ?dataset a ex:Dataset ;
+    rdfs:label ?label ;
+    schema:description ?summary ;
+    skos:notation ?fileFormat ;
+    schema:url ?url ;
+    schema:publisher ?publisher .
+
+  FILTER ( lang(?label) = "en" )
+
+  # Filter by topic
+  OPTIONAL {
+    ?dataset ex:hasTopic ?topic .
+    FILTER ( str(?topic) = "air quality" )
+  }
+2024-12-09 18:32:20,674 - __main__ - INFO - Graph contains 87624 triples.
+2024-12-09 18:32:20,674 - __main__ - INFO - Executing SPARQL Query:
+PREFIX ex: <http://example.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?dataset ?label ?summary ?fileFormat ?url ?publisher
+WHERE {
+  FILTER (REGEX(LCASE(STR(?label)), "air quality", "i") || REGEX(LCASE(STR(?summary)), "air quality", "i"))
+  FILTER(REGEX(LCASE(STR(?fileFormat)), "csv", "i"))
+
+  ?dataset a ex:Dataset ;
+    rdfs:label ?label ;
+    schema:description ?summary ;
+    skos:notation ?fileFormat ;
+    schema:url ?url ;
+    schema:publisher ?publisher .
+
+  FILTER ( lang(?label) = "en" )
+
+  # Filter by topic
+  OPTIONAL {
+    ?dataset ex:hasTopic ?topic .
+    FILTER ( str(?topic) = "air quality" )
+  }}
+2024-12-09 18:32:21,027 - llm_chatbot - INFO - Closed LLMChatbot session.
+2024-12-09 18:33:26,703 - root - INFO - Logging is configured.
+2024-12-09 18:33:26,703 - llm_chatbot - INFO - Initialized LLMChatbot with model: mistral, temperature: 0.7, max_tokens: 500, api_url: http://localhost:11434/api/generate
+2024-12-09 18:33:33,261 - __main__ - INFO - Extracted Facets: {'format': 'csv', 'topic': 'air quality in csv', 'publisher': None}
+2024-12-09 18:33:36,617 - __main__ - INFO - Extracted SPARQL Query:
+PREFIX ex: <http://example.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?dataset ?label ?summary ?fileFormat ?url ?publisher
+WHERE {
+  BIND(URI("http://example.org/Dataset") AS ?type)
+  ?dataset a ?type ;
+          rdfs:label ?label ;
+          schema:description ?summary ;
+          skos:notation ?fileFormat ;
+          schema:url ?url ;
+          schema:publisher ?publisher .
+  FILTER(lang(?label) = "en" || lang(?label) = "" )
+  FILTER(str(?fileFormat) = "text/csv")
+  FILTER(IF(?publisher = "", TRUE(), BIND(URI(STR(?publisher)) AS ?nonePublishers) && STR(?nonePublishers) != "<http://example.org/Publisher>") )
+  FILTER(STR(lcase(str(?topic))) = "air quality" && STR(lcase(str(?label))) CONTAINS lcase("air quality") || STR(lcase(str(?topic))) = "" )
+}
+2024-12-09 18:33:38,740 - __main__ - INFO - Graph contains 87624 triples.
+2024-12-09 18:33:38,740 - __main__ - INFO - Executing SPARQL Query:
+PREFIX ex: <http://example.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?dataset ?label ?summary ?fileFormat ?url ?publisher
+WHERE {
+  FILTER (REGEX(LCASE(STR(?label)), "air quality in csv", "i") || REGEX(LCASE(STR(?summary)), "air quality in csv", "i"))
+  FILTER(REGEX(LCASE(STR(?fileFormat)), "csv", "i"))
+
+  BIND(URI("http://example.org/Dataset") AS ?type)
+  ?dataset a ?type ;
+          rdfs:label ?label ;
+          schema:description ?summary ;
+          skos:notation ?fileFormat ;
+          schema:url ?url ;
+          schema:publisher ?publisher .
+  FILTER(lang(?label) = "en" || lang(?label) = "" )
+  FILTER(str(?fileFormat) = "text/csv")
+  FILTER(IF(?publisher = "", TRUE(), BIND(URI(STR(?publisher)) AS ?nonePublishers) && STR(?nonePublishers) != "<http://example.org/Publisher>") )
+  FILTER(STR(lcase(str(?topic))) = "air quality" && STR(lcase(str(?label))) CONTAINS lcase("air quality") || STR(lcase(str(?topic))) = "" )
+}
+2024-12-09 18:33:38,824 - __main__ - ERROR - Error executing SPARQL query: Expected SelectQuery, found 'FILTER'  (at char 771), (line:20, col:3)
+2024-12-09 18:33:38,970 - llm_chatbot - INFO - Closed LLMChatbot session.
+2024-12-09 18:35:39,428 - root - INFO - Logging is configured.
+2024-12-09 18:35:39,428 - llm_chatbot - INFO - Initialized LLMChatbot with model: mistral, temperature: 0.7, max_tokens: 500, api_url: http://localhost:11434/api/generate
+2024-12-09 18:35:48,148 - __main__ - INFO - Extracted Facets: {'format': 'csv', 'topic': 'air quality in csv', 'publisher': None}
+2024-12-09 18:35:50,809 - __main__ - INFO - Extracted SPARQL Query:
+PREFIX ex: <http://example.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?label ?summary ?fileFormat ?url ?publisher
+WHERE {
+  ?dataset a ex:Dataset ;
+        rdfs:label ?label ;
+        schema:description ?summary ;
+        skos:notation ?fileFormat ;
+        schema:url ?url ;
+        schema:publisher ?publisher .
+
+  FILTER(lang(?label) = "en" || isBlank(?label))
+  FILTER(regex(str(?summary), "air quality", "i"))
+  FILTER(strcmp(?fileFormat, "csv") = 0 OR (?publisher as schema:Organization) = "" )
+}
+2024-12-09 18:35:52,945 - __main__ - INFO - Graph contains 87624 triples.
+2024-12-09 18:35:52,945 - __main__ - INFO - Executing SPARQL Query:
+PREFIX ex: <http://example.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?label ?summary ?fileFormat ?url ?publisher
+WHERE {
+  FILTER (REGEX(LCASE(STR(?label)), "air quality in csv", "i") || REGEX(LCASE(STR(?summary)), "air quality in csv", "i"))
+  FILTER(REGEX(LCASE(STR(?fileFormat)), "csv", "i"))
+
+  ?dataset a ex:Dataset ;
+        rdfs:label ?label ;
+        schema:description ?summary ;
+        skos:notation ?fileFormat ;
+        schema:url ?url ;
+        schema:publisher ?publisher .
+
+  FILTER(lang(?label) = "en" || isBlank(?label))
+  FILTER(regex(str(?summary), "air quality", "i"))
+  FILTER(strcmp(?fileFormat, "csv") = 0 OR (?publisher as schema:Organization) = "" )
+}
+2024-12-09 18:35:53,029 - __main__ - ERROR - Error executing SPARQL query: Expected SelectQuery, found 'FILTER'  (at char 715), (line:20, col:3)
+2024-12-09 18:35:53,175 - llm_chatbot - INFO - Closed LLMChatbot session.
+2024-12-09 18:40:25,932 - root - INFO - Logging is configured.
+2024-12-09 18:40:25,932 - llm_chatbot - INFO - Initialized LLMChatbot with model: mistral, temperature: 0.7, max_tokens: 500, api_url: http://localhost:11434/api/generate
+2024-12-09 18:40:34,023 - llm_chatbot - INFO - Closed LLMChatbot session.
+2024-12-10 17:23:51,456 - root - INFO - Logging is configured.
+2024-12-10 17:23:51,456 - llm_chatbot - INFO - Initialized LLMChatbot with model: mistral, temperature: 0.7, max_tokens: 500, api_url: http://localhost:11434/api/generate
+2024-12-10 17:24:02,303 - __main__ - INFO - Extracted Facets: {'format': 'csv', 'topic': 'air quality in csv format?', 'publisher': None}
+2024-12-10 17:24:08,938 - __main__ - INFO - Extracted SPARQL Query:
+PREFIX ex: <http://example.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?label ?summary ?fileFormat ?url ?publisher
+WHERE {
+  ?dataset rdf:type ex:Dataset .
+  OPTIONAL { ?dataset schema:about ?url . }
+2024-12-10 17:24:11,063 - __main__ - INFO - Graph contains 87624 triples.
+2024-12-10 17:24:11,064 - __main__ - INFO - Executing SPARQL Query:
+PREFIX ex: <http://example.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?label ?summary ?fileFormat ?url ?publisher
+WHERE {
+  FILTER (REGEX(LCASE(STR(?label)), "air quality in csv format?", "i") || REGEX(LCASE(STR(?summary)), "air quality in csv format?", "i"))
+  FILTER(REGEX(LCASE(STR(?fileFormat)), "csv", "i"))
+
+  ?dataset rdf:type ex:Dataset .
+    OPTIONAL { ?dataset schema:about ?url . }}
+2024-12-10 17:24:12,323 - llm_chatbot - INFO - Closed LLMChatbot session.
+2024-12-10 17:24:37,551 - root - INFO - Logging is configured.
+2024-12-10 17:24:37,551 - llm_chatbot - INFO - Initialized LLMChatbot with model: mistral, temperature: 0.7, max_tokens: 500, api_url: http://localhost:11434/api/generate
+2024-12-10 17:24:44,782 - __main__ - INFO - Extracted Facets: {'format': 'csv', 'topic': 'air quality in csv?', 'publisher': None}
+2024-12-10 17:24:47,802 - __main__ - INFO - Extracted SPARQL Query:
+PREFIX ex: <http://example.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?datasetLabel ?summary ?fileFormat ?url ?publisher
+WHERE {
+  ?dataset rdf:type ex:Dataset .
+  OPTIONAL { ?dataset schema:hasPart ?part .
+            ?part rdfs:label ?datasetLabel }
+2024-12-10 17:24:49,946 - __main__ - INFO - Graph contains 87624 triples.
+2024-12-10 17:24:49,946 - __main__ - INFO - Executing SPARQL Query:
+PREFIX ex: <http://example.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?datasetLabel ?summary ?fileFormat ?url ?publisher
+WHERE {
+  FILTER (REGEX(LCASE(STR(?label)), "air quality in csv?", "i") || REGEX(LCASE(STR(?summary)), "air quality in csv?", "i"))
+  FILTER(REGEX(LCASE(STR(?fileFormat)), "csv", "i"))
+
+  ?dataset rdf:type ex:Dataset .
+    OPTIONAL { ?dataset schema:hasPart ?part .
+            ?part rdfs:label ?datasetLabel }}
+2024-12-10 17:24:51,236 - llm_chatbot - INFO - Closed LLMChatbot session.
+2024-12-10 17:27:29,779 - root - INFO - Logging is configured.
+2024-12-10 17:27:29,779 - llm_chatbot - INFO - Initialized LLMChatbot with model: mistral, temperature: 0.7, max_tokens: 500, api_url: http://localhost:11434/api/generate
+2024-12-10 17:27:37,363 - __main__ - INFO - Extracted Facets: {'format': 'csv', 'topic': 'air quality', 'publisher': None}
+2024-12-10 17:27:39,640 - __main__ - INFO - Extracted SPARQL Query:
+PREFIX ex: <http://example.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?dataset ?label ?summary ?fileFormat ?url ?publisher
+WHERE {
+  ?dataset a ex:Dataset ;
+         rdfs:label ?label ;
+         schema:description ?summary OPTIONAL ;
+         skos:hasFormat ?fileFormat OPTIONAL ;
+         schema:url ?url OPTIONAL ;
+         skos:publisher ?publisher .
+
+  FILTER (
+    lang(?label) = "en" || isBlank(?label) || lang(?label) = "" || iri(?label) = <>
+    BIFACE(str(?summary) CONTAINS "air quality")
+    BIFACE(str(?fileFormat) = "csv")
+    BIFACE(isBlank(?publisher) || (str(?publisher) = "" || iri(?publisher) = <>))
+  )
+}
+2024-12-10 17:27:41,771 - __main__ - INFO - Graph contains 87624 triples.
+2024-12-10 17:27:41,771 - __main__ - INFO - Executing SPARQL Query:
+PREFIX ex: <http://example.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?dataset ?label ?summary ?fileFormat ?url ?publisher
+WHERE {
+  FILTER (REGEX(LCASE(STR(?label)), "air quality", "i") || REGEX(LCASE(STR(?summary)), "air quality", "i"))
+  FILTER(REGEX(LCASE(STR(?fileFormat)), "csv", "i"))
+
+  ?dataset a ex:Dataset ;
+         rdfs:label ?label ;
+         schema:description ?summary OPTIONAL ;
+         skos:hasFormat ?fileFormat OPTIONAL ;
+         schema:url ?url OPTIONAL ;
+         skos:publisher ?publisher .
+
+  FILTER (
+    lang(?label) = "en" || isBlank(?label) || lang(?label) = "" || iri(?label) = <>
+    BIFACE(str(?summary) CONTAINS "air quality")
+    BIFACE(str(?fileFormat) = "csv")
+    BIFACE(isBlank(?publisher) || (str(?publisher) = "" || iri(?publisher) = <>))
+  )
+}
+2024-12-10 17:27:41,844 - __main__ - ERROR - Error executing SPARQL query: Expected SelectQuery, found 'OPTIONAL'  (at char 507), (line:13, col:38)
+2024-12-10 17:27:41,991 - llm_chatbot - INFO - Closed LLMChatbot session.
+2024-12-10 17:28:18,936 - root - INFO - Logging is configured.
+2024-12-10 17:28:18,936 - llm_chatbot - INFO - Initialized LLMChatbot with model: mistral, temperature: 0.7, max_tokens: 500, api_url: http://localhost:11434/api/generate
+2024-12-10 17:28:42,955 - __main__ - INFO - Extracted Facets: {'format': 'csv', 'topic': 'air quality in csv files', 'publisher': None}
+2024-12-10 17:28:47,167 - __main__ - INFO - Extracted SPARQL Query:
+PREFIX ex: <http://example.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?dataset ?label ?summary ?fileFormat ?url ?publisher
+WHERE {
+  # Match entities of type ex:Dataset
+  ?dataset a ex:Dataset;
+        skos:subject ?topic .
+
+  # Filter by Topic
+  BIND(if(langmatches(lang(?topic), "en", ""), ?topic, str(?topic)@en) as ?topicLabel)
+  FILTER (regex(str(?topicLabel), "air quality", "i"))
+
+  # Filter by Format
+  OPTIONAL { ?dataset schema:format ?fileFormatFilter . }
+2024-12-10 17:28:49,303 - __main__ - INFO - Graph contains 87624 triples.
+2024-12-10 17:28:49,303 - __main__ - INFO - Executing SPARQL Query:
+PREFIX ex: <http://example.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?dataset ?label ?summary ?fileFormat ?url ?publisher
+WHERE {
+  FILTER (REGEX(LCASE(STR(?label)), "air quality in csv files", "i") || REGEX(LCASE(STR(?summary)), "air quality in csv files", "i"))
+  FILTER(REGEX(LCASE(STR(?fileFormat)), "csv", "i"))
+
+  # Match entities of type ex:Dataset
+  ?dataset a ex:Dataset;
+        skos:subject ?topic .
+
+  # Filter by Topic
+  BIND(if(langmatches(lang(?topic), "en", ""), ?topic, str(?topic)@en) as ?topicLabel)
+  FILTER (regex(str(?topicLabel), "air quality", "i"))
+
+  # Filter by Format
+  OPTIONAL { ?dataset schema:format ?fileFormatFilter . }}
+2024-12-10 17:28:49,381 - __main__ - ERROR - Error executing SPARQL query: Expected SelectQuery, found 'BIND'  (at char 557), (line:16, col:3)
+2024-12-10 17:28:49,532 - llm_chatbot - INFO - Closed LLMChatbot session.
+2024-12-10 17:28:52,486 - root - INFO - Logging is configured.
+2024-12-10 17:28:52,487 - llm_chatbot - INFO - Initialized LLMChatbot with model: mistral, temperature: 0.7, max_tokens: 500, api_url: http://localhost:11434/api/generate
+2024-12-10 17:28:59,833 - __main__ - INFO - Extracted Facets: {'format': 'csv', 'topic': None, 'publisher': None}
+2024-12-10 17:29:02,417 - __main__ - INFO - Extracted SPARQL Query:
+PREFIX ex: <http://example.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?dataset ?label ?summary ?fileFormat ?url ?publisher
+WHERE {
+  ?dataset a ex:Dataset ;
+          rdfs:label ?label ;
+          skos:notation ?summary OPTIONAL ;
+          schema:encodingScheme ?fileFormat OPTIONAL ;
+          schema:downloadURL ?url OPTIONAL ;
+          schema:publisher ?publisher OPTIONAL .
+
+  FILTER (LANG(?label) = "en" || LANG(?label) = "" || ISBLANK(?label))
+  FILTER (STR(?fileFormat) = 'csv' || ISBLANK(?fileFormat))
+  FILTER (ISBLANK(?publisher) || STR(?publisher) != 'None')
+}
+2024-12-10 17:29:04,539 - __main__ - INFO - Graph contains 87624 triples.
+2024-12-10 17:29:04,539 - __main__ - INFO - Executing SPARQL Query:
+PREFIX ex: <http://example.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?dataset ?label ?summary ?fileFormat ?url ?publisher
+WHERE {
+  FILTER(REGEX(LCASE(STR(?fileFormat)), "csv", "i"))
+
+  ?dataset a ex:Dataset ;
+          rdfs:label ?label ;
+          skos:notation ?summary OPTIONAL ;
+          schema:encodingScheme ?fileFormat OPTIONAL ;
+          schema:downloadURL ?url OPTIONAL ;
+          schema:publisher ?publisher OPTIONAL .
+
+  FILTER (LANG(?label) = "en" || LANG(?label) = "" || ISBLANK(?label))
+  FILTER (STR(?fileFormat) = 'csv' || ISBLANK(?fileFormat))
+  FILTER (ISBLANK(?publisher) || STR(?publisher) != 'None')
+}
+2024-12-10 17:29:04,604 - __main__ - ERROR - Error executing SPARQL query: Expected SelectQuery, found 'OPTIONAL'  (at char 396), (line:12, col:34)
+2024-12-10 17:29:04,749 - llm_chatbot - INFO - Closed LLMChatbot session.
+2024-12-10 18:10:23,553 - root - INFO - Logging is configured.
+2024-12-10 18:10:23,553 - llm_chatbot - INFO - Initialized LLMChatbot with model: mistral, temperature: 0.7, max_tokens: 500, api_url: http://localhost:11434/api/generate
+2024-12-10 18:10:30,767 - __main__ - INFO - Extracted Facets: {'format': 'csv', 'topic': 'air quality in csv?', 'publisher': None}
+2024-12-10 18:10:37,213 - __main__ - INFO - Extracted SPARQL Query:
+PREFIX ex: <http://example.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?dataset ?label ?summary ?fileFormat ?url ?publisher
+WHERE {
+  ?dataset a ex:Dataset ;
+        rdfs:label ?label ;
+        skos:definition ?summary ;
+        schema:encodingSchema ?fileFormat ;
+        schema:url ?url ;
+        schema:publisher ?publisher .
+
+  FILTER(lang(?label) = "en" || isBlank(?label))
+  FILTER(LANGTAG(?summary) = "en" || isBlank(?summary))
+  FILTER(lcase(str(?fileFormat)) = 'csv')
+  FILTER(isBlank(?publisher) OR (?publisher = ''None''))
+  FILTER(STRSTARTS(str(?dataset), "air quality"))
+}
+2024-12-10 18:10:39,346 - __main__ - INFO - Graph contains 87624 triples.
+2024-12-10 18:10:39,346 - __main__ - INFO - Executing SPARQL Query:
+PREFIX ex: <http://example.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?dataset ?label ?summary ?fileFormat ?url ?publisher
+WHERE {
+  FILTER (REGEX(LCASE(STR(?label)), "air quality in csv?", "i") || REGEX(LCASE(STR(?summary)), "air quality in csv?", "i"))
+  FILTER(REGEX(LCASE(STR(?fileFormat)), "csv", "i"))
+
+  ?dataset a ex:Dataset ;
+        rdfs:label ?label ;
+        skos:definition ?summary ;
+        schema:encodingSchema ?fileFormat ;
+        schema:url ?url ;
+        schema:publisher ?publisher .
+
+  FILTER(lang(?label) = "en" || isBlank(?label))
+  FILTER(LANGTAG(?summary) = "en" || isBlank(?summary))
+  FILTER(lcase(str(?fileFormat)) = 'csv')
+  FILTER(isBlank(?publisher) OR (?publisher = ''None''))
+  FILTER(STRSTARTS(str(?dataset), "air quality"))
+}
+2024-12-10 18:10:39,426 - __main__ - ERROR - Error executing SPARQL query: Expected SelectQuery, found 'FILTER'  (at char 680), (line:19, col:3)
+2024-12-10 18:10:39,576 - llm_chatbot - INFO - Closed LLMChatbot session.
+2024-12-10 18:10:56,792 - root - INFO - Logging is configured.
+2024-12-10 18:10:56,792 - llm_chatbot - INFO - Initialized LLMChatbot with model: mistral, temperature: 0, max_tokens: 500, api_url: http://localhost:11434/api/generate
+2024-12-10 18:11:05,031 - __main__ - INFO - Extracted Facets: {'format': 'csv', 'topic': None, 'publisher': None}
+2024-12-10 18:11:07,758 - __main__ - INFO - Extracted SPARQL Query:
+PREFIX ex: <http://example.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?dataset ?label ?summary ?fileFormat ?url ?publisher
+WHERE {
+  ?dataset a ex:Dataset ;
+          rdfs:label ?label ;
+          schema:description ?summary OPTIONAL ;
+          skos:notation ?fileFormat OPTIONAL ;
+          schema:url ?url OPTIONAL ;
+          schema:potentialAction/schema:publisher ?publisher OPTIONAL .
+  FILTER (xsd:string('None') = COALESCE(str(?Topic),'') ||
+           xsd:string('csv') = COALESCE(str(?Format),'') ||
+           isBlank(?Publisher) || COALESCE(str(?Publisher),'') = 'None')
+}
+2024-12-10 18:11:07,758 - __main__ - WARNING - OPTIONAL clause may be malformed.
+2024-12-10 18:11:09,868 - __main__ - INFO - Graph contains 87624 triples.
+2024-12-10 18:11:09,868 - __main__ - INFO - Executing SPARQL Query:
+PREFIX ex: <http://example.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?dataset ?label ?summary ?fileFormat ?url ?publisher
+WHERE {
+  FILTER(REGEX(LCASE(STR(?fileFormat)), "csv", "i"))
+
+  ?dataset a ex:Dataset ;
+          rdfs:label ?label ;
+          schema:description ?summary OPTIONAL ;
+          skos:notation ?fileFormat OPTIONAL ;
+          schema:url ?url OPTIONAL ;
+          schema:potentialAction/schema:publisher ?publisher OPTIONAL .
+  FILTER (xsd:string('None') = COALESCE(str(?Topic),'') ||
+           xsd:string('csv') = COALESCE(str(?Format),'') ||
+           isBlank(?Publisher) || COALESCE(str(?Publisher),'') = 'None')
+}
+2024-12-10 18:11:09,933 - __main__ - ERROR - Error executing SPARQL query: Expected SelectQuery, found 'OPTIONAL'  (at char 401), (line:12, col:39)
+2024-12-10 18:11:10,079 - llm_chatbot - INFO - Closed LLMChatbot session.
+2024-12-10 18:42:48,252 - root - INFO - Logging is configured.
+2024-12-10 18:42:48,252 - llm_chatbot - INFO - Initialized LLMChatbot with model: mistral, temperature: 0.7, max_tokens: 500, api_url: http://localhost:11434/api/generate
+2024-12-10 18:42:52,607 - __main__ - INFO - Extracted Facets: {'format': None, 'topic': 'air quality', 'publisher': None}
+2024-12-10 18:42:59,357 - __main__ - INFO - Extracted SPARQL Query:
+PREFIX ex: <http://example.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?dataset ?label ?summary ?fileFormat ?url ?publisher
+WHERE {
+  ?dataset a ex:Dataset .
+  OPTIONAL { ?dataset rdfs:label ?label }
+2024-12-10 18:42:59,357 - __main__ - WARNING - Unbalanced braces found. Attempting to fix.
+2024-12-10 18:43:01,483 - __main__ - INFO - Graph contains 87624 triples.
+2024-12-10 18:43:01,483 - __main__ - INFO - Executing SPARQL Query:
+PREFIX ex: <http://example.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?dataset ?label ?summary ?fileFormat ?url ?publisher
+WHERE {
+  ?dataset a ex:Dataset .
+  OPTIONAL { ?dataset rdfs:label ?label }}
+2024-12-10 18:43:03,291 - llm_chatbot - INFO - Closed LLMChatbot session.
+2024-12-10 18:43:28,730 - root - INFO - Logging is configured.
+2024-12-10 18:43:28,730 - llm_chatbot - INFO - Initialized LLMChatbot with model: mistral, temperature: 0.7, max_tokens: 500, api_url: http://localhost:11434/api/generate
+2024-12-10 18:43:35,988 - __main__ - INFO - Extracted Facets: {'format': 'csv', 'topic': 'air quality in csv format?', 'publisher': None}
+2024-12-10 18:43:38,875 - __main__ - INFO - Extracted SPARQL Query:
+PREFIX ex: <http://example.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?dataset ?label ?summary ?fileFormat ?url ?publisher
+WHERE {
+  ?dataset a ex:Dataset .
+  OPTIONAL { ?dataset rdfs:label ?label . }
+2024-12-10 18:43:38,875 - __main__ - WARNING - Unbalanced braces found. Attempting to fix.
+2024-12-10 18:43:41,007 - __main__ - INFO - Graph contains 87624 triples.
+2024-12-10 18:43:41,007 - __main__ - INFO - Executing SPARQL Query:
+PREFIX ex: <http://example.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?dataset ?label ?summary ?fileFormat ?url ?publisher
+WHERE {
+  ?dataset a ex:Dataset .
+  OPTIONAL { ?dataset rdfs:label ?label . }}
+2024-12-10 18:43:42,896 - llm_chatbot - INFO - Closed LLMChatbot session.
+2024-12-10 18:43:45,324 - root - INFO - Logging is configured.
+2024-12-10 18:43:45,324 - llm_chatbot - INFO - Initialized LLMChatbot with model: mistral, temperature: 0.7, max_tokens: 500, api_url: http://localhost:11434/api/generate
+2024-12-10 18:43:51,814 - __main__ - INFO - Extracted Facets: {'format': 'csv', 'topic': 'air quality in csv', 'publisher': None}
+2024-12-10 18:43:54,288 - __main__ - INFO - Extracted SPARQL Query:
+PREFIX ex: <http://example.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?dataset ?label ?summary ?fileFormat ?url ?publisher
+WHERE {
+  ?dataset a ex:Dataset .
+  OPTIONAL { ?dataset rdfs:label ?label }
+2024-12-10 18:43:54,288 - __main__ - WARNING - Unbalanced braces found. Attempting to fix.
+2024-12-10 18:43:56,411 - __main__ - INFO - Graph contains 87624 triples.
+2024-12-10 18:43:56,411 - __main__ - INFO - Executing SPARQL Query:
+PREFIX ex: <http://example.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?dataset ?label ?summary ?fileFormat ?url ?publisher
+WHERE {
+  ?dataset a ex:Dataset .
+  OPTIONAL { ?dataset rdfs:label ?label }}
+2024-12-10 18:43:58,193 - llm_chatbot - INFO - Closed LLMChatbot session.
+2024-12-10 18:44:12,961 - root - INFO - Logging is configured.
+2024-12-10 18:44:12,961 - llm_chatbot - INFO - Initialized LLMChatbot with model: mistral, temperature: 0.7, max_tokens: 500, api_url: http://localhost:11434/api/generate
+2024-12-10 18:44:23,618 - __main__ - INFO - Extracted Facets: {'format': None, 'topic': 'animals?', 'publisher': None}
+2024-12-10 18:44:26,327 - __main__ - INFO - Extracted SPARQL Query:
+PREFIX ex: <http://example.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?dataset ?label ?summary ?fileFormat ?url ?publisher
+WHERE {
+  ?dataset a ex:Dataset .
+  OPTIONAL { ?dataset rdfs:label ?label . }
+2024-12-10 18:44:26,328 - __main__ - WARNING - Unbalanced braces found. Attempting to fix.
+2024-12-10 18:44:28,449 - __main__ - INFO - Graph contains 87624 triples.
+2024-12-10 18:44:28,449 - __main__ - INFO - Executing SPARQL Query:
+PREFIX ex: <http://example.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?dataset ?label ?summary ?fileFormat ?url ?publisher
+WHERE {
+  ?dataset a ex:Dataset .
+  OPTIONAL { ?dataset rdfs:label ?label . }}
+2024-12-10 18:44:30,288 - llm_chatbot - INFO - Closed LLMChatbot session.
+2024-12-10 18:47:19,800 - root - INFO - Logging is configured.
+2024-12-10 18:47:19,800 - llm_chatbot - INFO - Initialized LLMChatbot with model: mistral, temperature: 0.7, max_tokens: 500, api_url: http://localhost:11434/api/generate
+2024-12-10 18:47:24,335 - __main__ - INFO - Extracted Facets: {'format': 'csv', 'topic': 'air quality', 'publisher': None}
+2024-12-10 18:47:27,259 - __main__ - INFO - Extracted SPARQL Query:
+PREFIX ex: <http://example.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?dataset ?label ?summary ?fileFormat ?url ?publisher
+WHERE {
+  ?dataset a ex:Dataset .
+  OPTIONAL { ?dataset rdfs:label ?label . }
+2024-12-10 18:47:27,259 - __main__ - WARNING - Unbalanced braces found. Attempting to fix.
+2024-12-10 18:47:29,391 - __main__ - INFO - Graph contains 87624 triples.
+2024-12-10 18:47:29,391 - __main__ - INFO - Executing SPARQL Query:
+PREFIX ex: <http://example.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?dataset ?label ?summary ?fileFormat ?url ?publisher
+WHERE {
+  ?dataset a ex:Dataset .
+  OPTIONAL { ?dataset rdfs:label ?label . }}
+2024-12-10 18:47:31,494 - llm_chatbot - INFO - Closed LLMChatbot session.
+2024-12-10 19:40:21,516 - root - INFO - Logging is configured.
+2024-12-10 19:40:21,516 - llm_chatbot - INFO - Initialized LLMChatbot with model: mistral, temperature: 0.7, max_tokens: 500, api_url: http://localhost:11434/api/generate
+2024-12-10 19:40:27,657 - __main__ - INFO - Extracted Facets: {'format': 'csv', 'topic': 'air quality', 'publisher': None}
+2024-12-10 19:40:34,270 - __main__ - INFO - Extracted SPARQL Query:
+PREFIX ex: <http://example.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?dataset ?label ?summary ?fileFormat ?url ?publisher
+WHERE {
+  ?dataset a ex:Dataset .
+
+  OPTIONAL { ?dataset rdfs:label ?label }
+2024-12-10 19:40:34,270 - __main__ - WARNING - Unbalanced braces found. Attempting to fix.
+2024-12-10 19:40:36,398 - __main__ - INFO - Graph contains 87624 triples.
+2024-12-10 19:40:36,398 - __main__ - INFO - Executing SPARQL Query:
+PREFIX ex: <http://example.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?dataset ?label ?summary ?fileFormat ?url ?publisher
+WHERE {
+  ?dataset a ex:Dataset .
+
+  OPTIONAL { ?dataset rdfs:label ?label }}
+2024-12-10 19:40:38,454 - llm_chatbot - INFO - Closed LLMChatbot session.
+2024-12-10 19:40:53,211 - root - INFO - Logging is configured.
+2024-12-10 19:40:53,211 - llm_chatbot - INFO - Initialized LLMChatbot with model: mistral, temperature: 0.7, max_tokens: 500, api_url: http://localhost:11434/api/generate
+2024-12-10 19:41:03,034 - __main__ - INFO - Extracted Facets: {'format': 'csv', 'topic': 'air quality do you have', 'publisher': None}
+2024-12-10 19:41:05,909 - __main__ - INFO - Extracted SPARQL Query:
+PREFIX ex: <http://example.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?dataset ?label ?summary ?fileFormat ?url ?publisher
+WHERE {
+  ?dataset a ex:Dataset .
+  OPTIONAL { ?dataset rdfs:label ?label . }
+2024-12-10 19:41:05,909 - __main__ - WARNING - Unbalanced braces found. Attempting to fix.
+2024-12-10 19:41:08,056 - __main__ - INFO - Graph contains 87624 triples.
+2024-12-10 19:41:08,056 - __main__ - INFO - Executing SPARQL Query:
+PREFIX ex: <http://example.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?dataset ?label ?summary ?fileFormat ?url ?publisher
+WHERE {
+  ?dataset a ex:Dataset .
+  OPTIONAL { ?dataset rdfs:label ?label . }}
+2024-12-10 19:41:09,887 - llm_chatbot - INFO - Closed LLMChatbot session.
+2024-12-10 20:17:54,587 - root - INFO - Logging is configured.
+2024-12-10 20:17:54,587 - llm_chatbot - INFO - Initialized LLMChatbot with model: mistral, temperature: 0.7, max_tokens: 500, api_url: http://localhost:11434/api/generate
+2024-12-10 20:18:02,659 - __main__ - INFO - Extracted Facets: {'format': 'csv', 'topic': 'air quality in csv', 'publisher': None}
+2024-12-10 20:18:02,659 - __main__ - ERROR - Error generating SPARQL query with LLM: 'NoneType' object has no attribute 'lower'
+2024-12-10 20:18:02,659 - __main__ - WARNING - Falling back to manual SPARQL query generation.
+2024-12-10 20:18:02,670 - llm_chatbot - INFO - Closed LLMChatbot session.
+2024-12-10 20:25:09,342 - root - INFO - Logging is configured.
+2024-12-10 20:25:09,343 - llm_chatbot - INFO - Initialized LLMChatbot with model: mistral, temperature: 0.7, max_tokens: 500, api_url: http://localhost:11434/api/generate
+2024-12-10 20:25:18,529 - __main__ - INFO - Extracted Facets: {'format': 'csv', 'topic': 'air quality', 'publisher': None}
+2024-12-10 20:25:25,262 - __main__ - INFO - Extracted SPARQL Query:
+PREFIX ex: <http://example.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT DISTINCT ?dataset ?label ?summary ?fileFormat ?url
+WHERE {{
+  ?dataset a ex:Dataset .
+  OPTIONAL {{ ?dataset rdfs:label ?label . }
+2024-12-10 20:25:25,262 - __main__ - WARNING - Unbalanced braces found. Attempting to fix.
+2024-12-10 20:25:25,262 - __main__ - INFO - Validated SPARQL Query:
+PREFIX ex: <http://example.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT DISTINCT ?dataset ?label ?summary ?fileFormat ?url
+WHERE {{
+  ?dataset a ex:Dataset .
+  OPTIONAL {{ ?dataset rdfs:label ?label . }}}}
+2024-12-10 20:25:27,377 - __main__ - INFO - Graph contains 87624 triples.
+2024-12-10 20:25:27,377 - __main__ - INFO - Executing SPARQL Query:
+PREFIX ex: <http://example.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT DISTINCT ?dataset ?label ?summary ?fileFormat ?url
+WHERE {{
+  ?dataset a ex:Dataset .
+  OPTIONAL {{ ?dataset rdfs:label ?label . }}}}
+2024-12-10 20:25:29,569 - llm_chatbot - INFO - Closed LLMChatbot session.
+2024-12-10 20:25:35,528 - root - INFO - Logging is configured.
+2024-12-10 20:25:35,528 - llm_chatbot - INFO - Initialized LLMChatbot with model: mistral, temperature: 0.7, max_tokens: 500, api_url: http://localhost:11434/api/generate
+2024-12-10 20:25:47,037 - __main__ - INFO - Extracted Facets: {'format': 'csv', 'topic': 'air quality in csv', 'publisher': None}
+2024-12-10 20:25:50,077 - __main__ - INFO - Extracted SPARQL Query:
+PREFIX ex: <http://example.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT DISTINCT ?dataset ?label ?summary ?fileFormat ?url ?publisher
+WHERE {{
+  ?dataset a ex:Dataset .
+  OPTIONAL {{ ?dataset rdfs:label ?label . }
+2024-12-10 20:25:50,077 - __main__ - WARNING - Unbalanced braces found. Attempting to fix.
+2024-12-10 20:25:50,077 - __main__ - INFO - Validated SPARQL Query:
+PREFIX ex: <http://example.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT DISTINCT ?dataset ?label ?summary ?fileFormat ?url ?publisher
+WHERE {{
+  ?dataset a ex:Dataset .
+  OPTIONAL {{ ?dataset rdfs:label ?label . }}}}
+2024-12-10 20:25:52,207 - __main__ - INFO - Graph contains 87624 triples.
+2024-12-10 20:25:52,207 - __main__ - INFO - Executing SPARQL Query:
+PREFIX ex: <http://example.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT DISTINCT ?dataset ?label ?summary ?fileFormat ?url ?publisher
+WHERE {{
+  ?dataset a ex:Dataset .
+  OPTIONAL {{ ?dataset rdfs:label ?label . }}}}
+2024-12-10 20:25:54,005 - llm_chatbot - INFO - Closed LLMChatbot session.
+2024-12-10 20:26:00,203 - root - INFO - Logging is configured.
+2024-12-10 20:26:00,203 - llm_chatbot - INFO - Initialized LLMChatbot with model: mistral, temperature: 0.7, max_tokens: 500, api_url: http://localhost:11434/api/generate
+2024-12-10 20:26:11,137 - __main__ - INFO - Extracted Facets: {'format': 'csv', 'topic': 'air quality', 'publisher': None}
+2024-12-10 20:26:13,863 - __main__ - INFO - Extracted SPARQL Query:
+PREFIX ex: <http://example.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT DISTINCT ?dataset ?label ?summary ?fileFormat ?url ?publisher
+WHERE {{
+  ?dataset a ex:Dataset .
+  OPTIONAL {{ ?dataset rdfs:label ?label . }
+2024-12-10 20:26:13,863 - __main__ - WARNING - Unbalanced braces found. Attempting to fix.
+2024-12-10 20:26:13,863 - __main__ - INFO - Validated SPARQL Query:
+PREFIX ex: <http://example.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT DISTINCT ?dataset ?label ?summary ?fileFormat ?url ?publisher
+WHERE {{
+  ?dataset a ex:Dataset .
+  OPTIONAL {{ ?dataset rdfs:label ?label . }}}}
+2024-12-10 20:26:15,987 - __main__ - INFO - Graph contains 87624 triples.
+2024-12-10 20:26:15,987 - __main__ - INFO - Executing SPARQL Query:
+PREFIX ex: <http://example.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT DISTINCT ?dataset ?label ?summary ?fileFormat ?url ?publisher
+WHERE {{
+  ?dataset a ex:Dataset .
+  OPTIONAL {{ ?dataset rdfs:label ?label . }}}}
+2024-12-10 20:26:17,842 - llm_chatbot - INFO - Closed LLMChatbot session.
+2024-12-10 20:26:39,049 - root - INFO - Logging is configured.
+2024-12-10 20:26:39,050 - llm_chatbot - INFO - Initialized LLMChatbot with model: mistral, temperature: 0.7, max_tokens: 500, api_url: http://localhost:11434/api/generate
+2024-12-10 20:26:48,821 - __main__ - INFO - Extracted Facets: {'format': 'csv', 'topic': 'air quality', 'publisher': None}
+2024-12-10 20:26:53,622 - __main__ - INFO - Extracted SPARQL Query:
+PREFIX ex: <http://example.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT DISTINCT ?dataset ?label ?summary ?fileFormat ?url ?publisher
+WHERE {
+  ?dataset a ex:Dataset .
+  OPTIONAL {{ ?dataset rdfs:label ?label . }
+2024-12-10 20:26:53,622 - __main__ - WARNING - Unbalanced braces found. Attempting to fix.
+2024-12-10 20:26:53,622 - __main__ - INFO - Validated SPARQL Query:
+PREFIX ex: <http://example.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT DISTINCT ?dataset ?label ?summary ?fileFormat ?url ?publisher
+WHERE {
+  ?dataset a ex:Dataset .
+  OPTIONAL {{ ?dataset rdfs:label ?label . }}}
+2024-12-10 20:26:55,728 - __main__ - INFO - Graph contains 87624 triples.
+2024-12-10 20:26:55,728 - __main__ - INFO - Executing SPARQL Query:
+PREFIX ex: <http://example.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT DISTINCT ?dataset ?label ?summary ?fileFormat ?url ?publisher
+WHERE {
+  ?dataset a ex:Dataset .
+  OPTIONAL {{ ?dataset rdfs:label ?label . }}}
+2024-12-10 20:26:57,608 - llm_chatbot - INFO - Closed LLMChatbot session.
+2024-12-10 20:27:40,792 - root - INFO - Logging is configured.
+2024-12-10 20:27:40,792 - llm_chatbot - INFO - Initialized LLMChatbot with model: mistral, temperature: 0.7, max_tokens: 500, api_url: http://localhost:11434/api/generate
+2024-12-10 20:27:50,396 - __main__ - INFO - Extracted Facets: {'format': 'csv', 'topic': 'air quality', 'publisher': None}
+2024-12-10 20:27:52,952 - __main__ - INFO - Extracted SPARQL Query:
+PREFIX ex: <http://example.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT DISTINCT ?dataset ?label ?summary ?fileFormat ?url ?publisher
+WHERE {{
+  ?dataset a ex:Dataset .
+  OPTIONAL {{ ?dataset rdfs:label ?label . }
+2024-12-10 20:27:52,952 - __main__ - WARNING - Unbalanced braces found: 4 opening vs 1 closing.
+2024-12-10 20:27:52,952 - __main__ - INFO - Validated SPARQL Query:
+PREFIX ex: <http://example.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT DISTINCT ?dataset ?label ?summary ?fileFormat ?url ?publisher
+WHERE {{
+  ?dataset a ex:Dataset .
+  OPTIONAL {{ ?dataset rdfs:label ?label . }}}}
+2024-12-10 20:27:55,098 - __main__ - INFO - Graph contains 87624 triples.
+2024-12-10 20:27:55,098 - __main__ - INFO - Executing SPARQL Query:
+PREFIX ex: <http://example.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT DISTINCT ?dataset ?label ?summary ?fileFormat ?url ?publisher
+WHERE {{
+  ?dataset a ex:Dataset .
+  OPTIONAL {{ ?dataset rdfs:label ?label . }}}}
+2024-12-10 20:27:56,973 - llm_chatbot - INFO - Closed LLMChatbot session.
+2024-12-10 20:31:25,449 - root - INFO - Logging is configured.
+2024-12-10 20:31:25,449 - llm_chatbot - INFO - Initialized LLMChatbot with model: mistral, temperature: 0.7, max_tokens: 500, api_url: http://localhost:11434/api/generate
+2024-12-10 20:31:45,192 - __main__ - INFO - Extracted Facets: {'format': 'csv', 'topic': 'air quality', 'publisher': None}
+2024-12-10 20:31:45,193 - __main__ - INFO - Generated SPARQL Query:
+
+PREFIX ex: <http://example.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT DISTINCT ?dataset ?label ?summary ?fileFormat ?url ?publisher
+WHERE {
+  ?dataset a ex:Dataset .
+  OPTIONAL { ?dataset rdfs:label ?label . }
+  OPTIONAL { ?dataset ex:summary ?summary . }
+  OPTIONAL { ?dataset ex:fileFormat ?fileFormat . }
+  OPTIONAL { ?dataset schema:url ?url . }
+  OPTIONAL { ?dataset ex:publisher ?publisher . }
+  FILTER (REGEX(LCASE(STR(?label)), "air quality", "i") || REGEX(LCASE(STR(?summary)), "air quality", "i"))
+  FILTER (REGEX(LCASE(STR(?fileFormat)), "csv", "i"))
+}
+
+2024-12-10 20:31:47,327 - __main__ - INFO - Graph contains 87624 triples.
+2024-12-10 20:31:47,327 - __main__ - INFO - Executing SPARQL Query:
+
+PREFIX ex: <http://example.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT DISTINCT ?dataset ?label ?summary ?fileFormat ?url ?publisher
+WHERE {
+  ?dataset a ex:Dataset .
+  OPTIONAL { ?dataset rdfs:label ?label . }
+  OPTIONAL { ?dataset ex:summary ?summary . }
+  OPTIONAL { ?dataset ex:fileFormat ?fileFormat . }
+  OPTIONAL { ?dataset schema:url ?url . }
+  OPTIONAL { ?dataset ex:publisher ?publisher . }
+  FILTER (REGEX(LCASE(STR(?label)), "air quality", "i") || REGEX(LCASE(STR(?summary)), "air quality", "i"))
+  FILTER (REGEX(LCASE(STR(?fileFormat)), "csv", "i"))
+}
+
+2024-12-10 20:31:50,422 - llm_chatbot - INFO - Closed LLMChatbot session.
+2024-12-10 20:32:30,880 - root - INFO - Logging is configured.
+2024-12-10 20:32:30,880 - llm_chatbot - INFO - Initialized LLMChatbot with model: mistral, temperature: 0.7, max_tokens: 500, api_url: http://localhost:11434/api/generate
+2024-12-10 20:32:43,970 - __main__ - INFO - Extracted Facets: {'format': None, 'topic': 'animals, is there anything on here?', 'publisher': None}
+2024-12-10 20:32:43,971 - __main__ - INFO - Generated SPARQL Query:
+
+PREFIX ex: <http://example.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT DISTINCT ?dataset ?label ?summary ?fileFormat ?url ?publisher
+WHERE {
+  ?dataset a ex:Dataset .
+  OPTIONAL { ?dataset rdfs:label ?label . }
+  OPTIONAL { ?dataset ex:summary ?summary . }
+  OPTIONAL { ?dataset ex:fileFormat ?fileFormat . }
+  OPTIONAL { ?dataset schema:url ?url . }
+  OPTIONAL { ?dataset ex:publisher ?publisher . }
+  FILTER (REGEX(LCASE(STR(?label)), "animals, is there anything on here?", "i") || REGEX(LCASE(STR(?summary)), "animals, is there anything on here?", "i"))
+}
+
+2024-12-10 20:32:46,104 - __main__ - INFO - Graph contains 87624 triples.
+2024-12-10 20:32:46,104 - __main__ - INFO - Executing SPARQL Query:
+
+PREFIX ex: <http://example.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT DISTINCT ?dataset ?label ?summary ?fileFormat ?url ?publisher
+WHERE {
+  ?dataset a ex:Dataset .
+  OPTIONAL { ?dataset rdfs:label ?label . }
+  OPTIONAL { ?dataset ex:summary ?summary . }
+  OPTIONAL { ?dataset ex:fileFormat ?fileFormat . }
+  OPTIONAL { ?dataset schema:url ?url . }
+  OPTIONAL { ?dataset ex:publisher ?publisher . }
+  FILTER (REGEX(LCASE(STR(?label)), "animals, is there anything on here?", "i") || REGEX(LCASE(STR(?summary)), "animals, is there anything on here?", "i"))
+}
+
+2024-12-10 20:32:48,907 - llm_chatbot - INFO - Closed LLMChatbot session.
+2024-12-10 20:32:52,596 - root - INFO - Logging is configured.
+2024-12-10 20:32:52,596 - llm_chatbot - INFO - Initialized LLMChatbot with model: mistral, temperature: 0.7, max_tokens: 500, api_url: http://localhost:11434/api/generate
+2024-12-10 20:32:58,284 - __main__ - INFO - Extracted Facets: {'format': None, 'topic': 'animals', 'publisher': None}
+2024-12-10 20:32:58,284 - __main__ - INFO - Generated SPARQL Query:
+
+PREFIX ex: <http://example.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT DISTINCT ?dataset ?label ?summary ?fileFormat ?url ?publisher
+WHERE {
+  ?dataset a ex:Dataset .
+  OPTIONAL { ?dataset rdfs:label ?label . }
+  OPTIONAL { ?dataset ex:summary ?summary . }
+  OPTIONAL { ?dataset ex:fileFormat ?fileFormat . }
+  OPTIONAL { ?dataset schema:url ?url . }
+  OPTIONAL { ?dataset ex:publisher ?publisher . }
+  FILTER (REGEX(LCASE(STR(?label)), "animals", "i") || REGEX(LCASE(STR(?summary)), "animals", "i"))
+}
+
+2024-12-10 20:33:00,418 - __main__ - INFO - Graph contains 87624 triples.
+2024-12-10 20:33:00,418 - __main__ - INFO - Executing SPARQL Query:
+
+PREFIX ex: <http://example.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT DISTINCT ?dataset ?label ?summary ?fileFormat ?url ?publisher
+WHERE {
+  ?dataset a ex:Dataset .
+  OPTIONAL { ?dataset rdfs:label ?label . }
+  OPTIONAL { ?dataset ex:summary ?summary . }
+  OPTIONAL { ?dataset ex:fileFormat ?fileFormat . }
+  OPTIONAL { ?dataset schema:url ?url . }
+  OPTIONAL { ?dataset ex:publisher ?publisher . }
+  FILTER (REGEX(LCASE(STR(?label)), "animals", "i") || REGEX(LCASE(STR(?summary)), "animals", "i"))
+}
+
+2024-12-10 20:33:03,225 - llm_chatbot - INFO - Closed LLMChatbot session.

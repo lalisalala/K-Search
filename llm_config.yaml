@@ -1,0 +1,10 @@
+llm:
+  model_name: "mistral"
+  temperature: 0
+  max_tokens: 10000
+  api_url: "http://localhost:11434/api/generate"
+faiss:
+  top_k: 10
+logging:
+  level: "INFO"
+  file: "app.log"
