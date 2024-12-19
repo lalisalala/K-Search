@@ -1,6 +1,5 @@
 from rdflib import Graph
 import logging
-import re
 from llm_chatbot import LLMChatbot
 
 # Configure logging
@@ -8,7 +7,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 # Initialize the LLMChatbot with Mistral
-chatbot = LLMChatbot(model_name="mistral", temperature=0.7, max_tokens=500, api_url="http://localhost:11434/api/generate")
+chatbot = LLMChatbot(model_name="mistral", temperature=0, max_tokens=500, api_url="http://localhost:11434/api/generate")
 
 # Static SPARQL Query Template
 SPARQL_TEMPLATE = """
@@ -18,59 +17,114 @@ PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 
 SELECT DISTINCT ?dataset ?label ?summary ?fileFormat ?url ?publisher
-WHERE {{
+WHERE {
   ?dataset a ex:Dataset .
-  OPTIONAL {{ ?dataset rdfs:label ?label . }}
-  OPTIONAL {{ ?dataset ex:summary ?summary . }}
-  OPTIONAL {{ ?dataset ex:fileFormat ?fileFormat . }}
-  OPTIONAL {{ ?dataset schema:url ?url . }}
-  OPTIONAL {{ ?dataset ex:publisher ?publisher . }}
+  OPTIONAL { ?dataset rdfs:label ?label . }
+  OPTIONAL { ?dataset ex:summary ?summary . }
+  OPTIONAL { ?dataset ex:fileFormat ?fileFormat . }
+  OPTIONAL { ?dataset schema:url ?url . }
+  OPTIONAL { ?dataset ex:publisher ?publisher . }
+  OPTIONAL { ?dataset ex:hasTopic ?topic . }
   {filters}
-}}
+}
 """
 
-def parse_user_query(user_query):
+PREDEFINED_TOPICS = [
+    "Demographics", "Environment", "Employment and Skills", "Planning", "Transparency",
+    "Business and Economy", "Housing", "Health", "Education", "Transport",
+    "Crime and Community Safety", "Young People", "Income, Poverty, and Welfare",
+    "Art and Culture", "COVID-19 Data and Analysis", "Championing London",
+    "Sport", "London 2012"
+]
+
+def load_valid_topics():
     """
-    Parse the user query to extract facets like topic, format, and publisher.
+    Load predefined valid topics for assigning in SPARQL queries.
     """
-    format_pattern = re.compile(r'\b(csv|json|html|pdf|excel|zip|doc|xls|spreadsheet)\b', re.IGNORECASE)
-    topic_pattern = re.compile(r'about (.+)', re.IGNORECASE)
-    publisher_pattern = re.compile(r'from ([\w\s]+)', re.IGNORECASE)
+    return PREDEFINED_TOPICS
 
-    format_match = format_pattern.search(user_query)
-    dataset_format = format_match.group(0).lower() if format_match else None
-
-    topic_match = topic_pattern.search(user_query)
-    topic = topic_match.group(1).strip() if topic_match else None
-
-    publisher_match = publisher_pattern.search(user_query)
-    publisher = publisher_match.group(1).strip() if publisher_match else None
-
-    return {'format': dataset_format, 'topic': topic, 'publisher': publisher}
-
-def build_filters(facets):
+def validate_assigned_topics(assigned_topics):
     """
-    Build the SPARQL FILTER block based on the extracted facets.
+    Ensure that the topics assigned by the LLM are part of the predefined list.
     """
-    filters = []
-    if facets.get('topic'):
-        filters.append(f'FILTER (REGEX(LCASE(STR(?label)), "{facets["topic"].lower()}", "i") || REGEX(LCASE(STR(?summary)), "{facets["topic"].lower()}", "i"))')
-    if facets.get('format'):
-        filters.append(f'FILTER (REGEX(LCASE(STR(?fileFormat)), "{facets["format"].lower()}", "i"))')
-    if facets.get('publisher'):
-        filters.append(f'FILTER (REGEX(LCASE(STR(?publisher)), "{facets["publisher"].lower()}", "i"))')
-    return "\n  ".join(filters)
+    return [topic for topic in assigned_topics if topic in PREDEFINED_TOPICS]
 
-def generate_sparql_query_with_llm(user_query, facets):
+def generate_sparql_query_with_llm(user_query):
     """
     Use the LLM to analyze the user query and generate a SPARQL query using the template.
     """
-    filters = build_filters(facets)
-    final_query = SPARQL_TEMPLATE.format(filters=filters)
-    logger.info(f"Generated SPARQL Query:\n{final_query}")
-    return final_query
+    prompt = (
+        "### Task\n"
+        "You are a SPARQL query assistant. Your job is to generate a SPARQL query based on the user's natural language query. "
+        "Replace the {filters} placeholder in the template with valid SPARQL FILTER statements derived from the user's query. "
+        "Your task includes assigning one or more of the following topics to the query:\n"
+        f"{', '.join(PREDEFINED_TOPICS)}.\n"
+        "Based on the user's query, suggest the most relevant topics from this list for `ex:hasTopic`.\n"
+        "Output only the SPARQL query. Do not include explanations, commentary, or unrelated text.\n\n"
+        "### SPARQL Template\n"
+        f"{SPARQL_TEMPLATE}\n\n"
+        "### Example\n"
+        "User Query: Find datasets about air quality in CSV format.\n"
+        "SPARQL Query:\n"
+        "PREFIX ex: <http://example.org/ontology/>\n"
+        "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n"
+        "PREFIX schema: <https://schema.org/>\n"
+        "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\n\n"
+        "SELECT DISTINCT ?dataset ?label ?summary ?fileFormat ?url ?publisher\n"
+        "WHERE {\n"
+        "  ?dataset a ex:Dataset .\n"
+        "  OPTIONAL { ?dataset rdfs:label ?label . }\n"
+        "  OPTIONAL { ?dataset ex:summary ?summary . }\n"
+        "  OPTIONAL { ?dataset ex:fileFormat ?fileFormat . }\n"
+        "  OPTIONAL { ?dataset schema:url ?url . }\n"
+        "  OPTIONAL { ?dataset ex:publisher ?publisher . }\n"
+        "  OPTIONAL { ?dataset ex:hasTopic ?topic . }\n"
+        "  FILTER (CONTAINS(LCASE(STR(?label)), \"air quality\") || CONTAINS(LCASE(STR(?summary)), \"air quality\"))\n"
+        "  FILTER (?topic IN (ex:Environment))\n"
+        "  FILTER (LCASE(STR(?fileFormat)) = \"csv\")\n"
+        "}\n\n"
+        "### User Query\n"
+        f"{user_query}\n\n"
+        "### SPARQL Query"
+    )
 
-def query_knowledge_graph(query_string, rdf_file='full_metadata_ontology.ttl'):
+    try:
+        llm_response = chatbot.generate_response(prompt)
+        sparql_query = llm_response.strip()
+
+        # Extract topics generated by the LLM (use simple regex or logic if needed)
+        generated_topics = [topic.strip() for topic in PREDEFINED_TOPICS if topic.lower() in sparql_query.lower()]
+        validated_topics = validate_assigned_topics(generated_topics)
+
+        # Replace the {filters} placeholder with the validated topics
+        if validated_topics:
+            topic_filter = f"FILTER (?topic IN ({', '.join(f'ex:{topic.replace(' ', '_')}' for topic in validated_topics)}))"
+        else:
+            topic_filter = ""
+
+        sparql_query = sparql_query.replace("{filters}", topic_filter)
+
+        # Validate SPARQL query structure
+        if not validate_sparql_output(sparql_query):
+            logger.error("SPARQL query validation failed.")
+            return None
+
+        logger.info(f"Generated SPARQL Query:\n{sparql_query}")
+        return sparql_query
+    except Exception as e:
+        logger.error(f"Error generating SPARQL query with LLM: {e}")
+        return None
+
+def validate_sparql_output(sparql_query):
+    """
+    Validate the SPARQL query to ensure it contains no extraneous text.
+    """
+    if "In this case" in sparql_query or "explanations" in sparql_query:
+        logger.error("Generated SPARQL query contains extraneous text.")
+        return False
+    return True
+
+def query_knowledge_graph(query_string, rdf_file='updated_metadata_ontology3.ttl'):
     """
     Query the RDF knowledge graph with the SPARQL query.
     """
@@ -92,23 +146,24 @@ def query_knowledge_graph(query_string, rdf_file='full_metadata_ontology.ttl'):
 
 def main():
     user_query = input("Enter your dataset query (e.g., 'I am looking for a dataset in csv format about air quality'): ").strip()
-    facets = parse_user_query(user_query)
-    logger.info(f"Extracted Facets: {facets}")
+    sparql_query = generate_sparql_query_with_llm(user_query)
 
-    sparql_query = generate_sparql_query_with_llm(user_query, facets)
-    results = query_knowledge_graph(sparql_query)
-    if results:
-        print("\nRelevant Datasets Found:\n")
-        for idx, result in enumerate(results, start=1):
-            print(f"Dataset {idx}:")
-            print(f"Title: {result.get('label', 'N/A')}")
-            print(f"Summary: {result.get('summary', 'N/A')}")
-            print(f"File Format: {result.get('fileFormat', 'N/A')}")
-            print(f"Publisher: {result.get('publisher', 'N/A')}")
-            print(f"Link: {result.get('url', 'N/A')}")
-            print()
+    if sparql_query:
+        results = query_knowledge_graph(sparql_query)
+        if results:
+            print("\nRelevant Datasets Found:\n")
+            for idx, result in enumerate(results, start=1):
+                print(f"Dataset {idx}:")
+                print(f"Title: {result.get('label', 'N/A')}")
+                print(f"Summary: {result.get('summary', 'N/A')}")
+                print(f"File Format: {result.get('fileFormat', 'N/A')}")
+                print(f"Publisher: {result.get('publisher', 'N/A')}")
+                print(f"Link: {result.get('url', 'N/A')}")
+                print()
+        else:
+            print("\nNo relevant datasets found.")
     else:
-        print("\nNo relevant datasets found.")
+        print("Failed to generate a SPARQL query.")
 
 if __name__ == "__main__":
     main()

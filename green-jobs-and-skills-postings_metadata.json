@@ -1,0 +1,141 @@
+{
+    "success": true,
+    "result": {
+        "owner_org": "5b858cb2-5c92-4b2b-8c1d-141cfc330d9c",
+        "maintainer": "",
+        "relationships_as_object": [],
+        "relationships_as_subject": [],
+        "private": false,
+        "maintainer_email": "jeff.oreilly@london.gov.uk",
+        "num_tags": 7,
+        "revision_id": null,
+        "title": "Green Job Postings",
+        "id": "65ce1474-7e0f-4d5e-a6ce-ebba02aff3a4",
+        "metadata_created": "2023-05-02T11:12:01.407Z",
+        "metadata_modified": "2024-12-02T22:05:48.579Z",
+        "author": "GLA Economics",
+        "author_email": "jeff.oreilly@london.gov.uk",
+        "state": "active",
+        "notes": "<h2>\n<strong>About this dataset</strong>\n</h2>\n<p>\n<strong style=\"color: black;\">This page presents experimental analysis related to green jobs and skills in London,</strong>\n<strong> using online job postings data provided by Lightcast.</strong> This near real-time data can be used to help track and assess the demand for green expertise in London.</p>\n<p>\n<span style=\"color: black;\">When using outputs from this analysis it is important to be aware of the following caveats:</span>\n</p>\n<ul>\n<li>\n<span style=\"color: black;\">The methodology used to identify green job postings remains experimental and subject to revision.</span>&nbsp;</li>\n<li>\n<span style=\"color: black;\">Online job postings may not fully reflect the overall composition of vacancies in the London labour market, as the number of vacancies is more evenly distributed across occupational groups in other data sources</span>.</li>\n<li>\n<span style=\"color: black;\">The analysis is not intended to be comprehensive or exhaustive. It is a snapshot analysis of key data as it pertains to London.</span>\n</li>\n<li>\n<span style=\"color: black;\">The analysis does not represent the full body of evidence on which Mayoral Policies are, or will be, based.</span>\n</li>\n</ul>\n<p>\n<span style=\"color: black;\">Outputs should be triangulated with other sources of information and analysis to develop a rounded statistical picture of any specific policy issues.</span>\n</p>",
+        "notes_markdown": "\nAbout this dataset\n\n\nThis page presents experimental analysis related to green jobs and skills in London,\n using online job postings data provided by Lightcast. This near real-time data can be used to help track and assess the demand for green expertise in London.\n\nWhen using outputs from this analysis it is important to be aware of the following caveats:\n\n\n\nThe methodology used to identify green job postings remains experimental and subject to revision.&nbsp;\n\nOnline job postings may not fully reflect the overall composition of vacancies in the London labour market, as the number of vacancies is more evenly distributed across occupational groups in other data sources.\n\nThe analysis is not intended to be comprehensive or exhaustive. It is a snapshot analysis of key data as it pertains to London.\n\n\nThe analysis does not represent the full body of evidence on which Mayoral Policies are, or will be, based.\n\n\n\nOutputs should be triangulated with other sources of information and analysis to develop a rounded statistical picture of any specific policy issues.\n",
+        "email_notify_maintainer": false,
+        "version": null,
+        "license_id": "closed",
+        "type": "dataset",
+        "num_resources": 1,
+        "email_notify_author": false,
+        "name": "green-jobs-and-skills-postings",
+        "isopen": null,
+        "url": null,
+        "license_text": null,
+        "license_title": "Other (Not Open)",
+        "creator_user_id": null,
+        "tags": [
+            {
+                "vocabulary_id": null,
+                "state": "active",
+                "display_name": "green jobs",
+                "id": null,
+                "name": "green jobs"
+            },
+            {
+                "vocabulary_id": null,
+                "state": "active",
+                "display_name": "green economy",
+                "id": null,
+                "name": "green economy"
+            },
+            {
+                "vocabulary_id": null,
+                "state": "active",
+                "display_name": "job-postings",
+                "id": null,
+                "name": "job-postings"
+            },
+            {
+                "vocabulary_id": null,
+                "state": "active",
+                "display_name": "vacancies",
+                "id": null,
+                "name": "vacancies"
+            },
+            {
+                "vocabulary_id": null,
+                "state": "active",
+                "display_name": "skills",
+                "id": null,
+                "name": "skills"
+            },
+            {
+                "vocabulary_id": null,
+                "state": "active",
+                "display_name": "employment",
+                "id": null,
+                "name": "employment"
+            },
+            {
+                "vocabulary_id": null,
+                "state": "active",
+                "display_name": "labour market",
+                "id": null,
+                "name": "labour market"
+            }
+        ],
+        "groups": [
+            {
+                "id": "50f66ade-4ef9-4814-b2cb-94e5b316d7f6",
+                "display_name": "Employment and Skills",
+                "title": "Employment and Skills",
+                "description": "",
+                "name": "employment-and-skills",
+                "image_display_url": "https://airdrive-images.s3-eu-west-1.amazonaws.com/london/img/topic/2018-11-01T18%3A45%3A11.98/employment-and-skills.png"
+            },
+            {
+                "id": "fb70a4e6-311c-41c1-8429-3fe27ebc928a",
+                "display_name": "Environment",
+                "title": "Environment",
+                "description": "",
+                "name": "environment",
+                "image_display_url": "https://airdrive-images.s3-eu-west-1.amazonaws.com/london/img/topic/2018-11-01T18%3A45%3A20.08/environment.png"
+            }
+        ],
+        "resources": [
+            {
+                "position": 0,
+                "url": "https://data.london.gov.uk/download/green-jobs-and-skills-postings/d4edd3cd-17f6-4c54-b5bd-1f21d4cf9567/Green_md_Dec24.html",
+                "format": "html",
+                "name": "Green job postings analysis update - December 2024",
+                "description": null,
+                "package_id": "65ce1474-7e0f-4d5e-a6ce-ebba02aff3a4",
+                "hash": "e71eeb65e277cd900d7c1f17ac89303d",
+                "created": "2024-12-02T22:05:40.329Z",
+                "size": 2613145,
+                "last_modified": null,
+                "id": "d4edd3cd-17f6-4c54-b5bd-1f21d4cf9567",
+                "url_type": null,
+                "webstore_url": null,
+                "webstore_last_updated": null,
+                "cache_url": null,
+                "resource_type": null,
+                "cache_last_updated": null,
+                "revision_id": null,
+                "mimetype": null,
+                "mimetype_inner": null,
+                "state": "active"
+            }
+        ],
+        "organization": {
+            "title": "Greater London Authority (GLA)",
+            "id": "5b858cb2-5c92-4b2b-8c1d-141cfc330d9c",
+            "image_url": "https://airdrive-images.s3-eu-west-1.amazonaws.com/london/img/publisher/2018-05-25T16%3A48%3A43.94/gla.png",
+            "is_organization": true,
+            "name": "gla",
+            "revision_id": null,
+            "type": "organization",
+            "description": "The GLA is a strategic regional authority, with powers over transport, policing, economic development, and fire and emergency planning. Three functional bodies \u2014 Transport for London, the Mayor's Office for Policing and Crime, and London Fire and Emergency Planning Authority \u2014 are responsible for delivery of services in these areas. ",
+            "state": "active",
+            "approval_status": "approved",
+            "created": "2014-10-01T12:57:27.134Z"
+        }
+    }
+}

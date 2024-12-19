@@ -36,49 +36,49 @@ def analyze_missing_metadata(graph):
         "summary": EX.summary,
         "fileFormat": EX.fileFormat,
         "url": SCHEMA.url,
-        "publisher": EX.publisher
+        "publisher": EX.publisher,
+        "group": EX.hasGroup,
+        "tag": EX.hasTag
     }
     
     results = []
     missing_count = {field: 0 for field in expected_fields.keys()}
-    missing_count["topic"] = 0  # Add a counter for topics
     total_datasets = 0
-    
-    # Iterate over all datasets of type `ex:Dataset`
+
+    logger.debug("Starting metadata analysis...")
+
     for dataset in graph.subjects(predicate=None, object=EX.Dataset):
         total_datasets += 1
         dataset_uri = str(dataset)
         missing_fields = []
-        
+
         # Check for each expected field
         for field_name, field_uri in expected_fields.items():
             if not (dataset, field_uri, None) in graph:
                 missing_fields.append(field_name)
                 missing_count[field_name] += 1
+            else:
+                # Handle special cases like "Unknown_Group" or "Unknown_Tag"
+                if field_name in ["group", "tag"]:
+                    for value in graph.objects(dataset, field_uri):
+                        if value == EX.Unknown_Group or value == EX.Unknown_Tag:
+                            missing_fields.append(field_name)
+                            missing_count[field_name] += 1
+                            break
 
-        # Special handling for topics
-        if not (dataset, EX.hasTopic, None) in graph:
-            missing_fields.append("topic")
-            missing_count["topic"] += 1
-        else:
-            # Check if the topic is explicitly set to `ex:Unknown_Topic`
-            for topic in graph.objects(dataset, EX.hasTopic):
-                if topic == EX.Unknown_Topic:
-                    missing_fields.append("topic")
-                    missing_count["topic"] += 1
-                    break
-
-        # Add result for this dataset
         results.append({
             "Dataset": dataset_uri,
             "Missing Metadata": ", ".join(missing_fields) if missing_fields else "None"
         })
     
-    # Calculate percentages for missing metadata
     missing_percentage = {
         field: (count / total_datasets) * 100 for field, count in missing_count.items()
     }
-    
+
+    logger.debug(f"Metadata analysis complete. Total datasets: {total_datasets}")
+    logger.debug(f"Missing metadata counts: {missing_count}")
+    logger.debug(f"Missing metadata percentages: {missing_percentage}")
+
     return results, missing_count, missing_percentage
 
 
@@ -97,9 +97,6 @@ def plot_missing_metadata(missing_count, missing_percentage):
     """
     Plot a visually enhanced bar chart of the missing metadata counts with percentages using Seaborn.
     """
-    import pandas as pd
-
-    # Set the Seaborn style
     sns.set_theme(style="whitegrid")
 
     # Create a DataFrame for easier plotting
@@ -141,11 +138,8 @@ def plot_missing_metadata(missing_count, missing_percentage):
 
     # Add counts and percentages above bars
     for i, bar in enumerate(ax.patches):
-        # Get the height of the bar (count)
         height = bar.get_height()
-        # Get the percentage for this bar
         percentage = missing_percentage[list(missing_count.keys())[i]]
-        # Add text annotation
         ax.text(
             bar.get_x() + bar.get_width() / 2,
             height + 0.5,
@@ -171,10 +165,10 @@ def plot_missing_metadata(missing_count, missing_percentage):
     # Save and show the plot
     plt.savefig("enhanced_missing_metadata_plot.png", dpi=300, bbox_inches="tight")
     plt.show()
-    logger.info("Enhanced missing metadata plot saved as 'enhanced_missing_metadata_plot.png'.")
+    logger.info("Enhanced missing metadata plot saved as 'enhanced_missing_metadata_plot2.png'.")
 
 def main():
-    rdf_file = "full_metadata_ontology.ttl"  # File located in the same folder
+    rdf_file = "full_metadata_ontology.ttl"  # Update with your RDF file name
     graph = load_graph(rdf_file)
     
     if graph:

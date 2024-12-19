@@ -20,18 +20,11 @@ def preprocess_metadata(value: str) -> str:
     cleaned_value = re.sub(r'[\r\n\t]+', ' ', value)
     # Collapse multiple spaces into a single space
     cleaned_value = re.sub(r'\s+', ' ', cleaned_value)
-    # Remove known formatting artifacts
-    artifacts = [
-        "Normal 0", "false false false", "MicrosoftInternetExplorer4", 
-        "/\\* Style Definitions \\*/", "table.MsoNormalTable"
-    ]
-    for artifact in artifacts:
-        cleaned_value = cleaned_value.replace(artifact, '')
     return cleaned_value.strip()
 
-def build_knowledge_graph(input_csv='datasets.csv', output_rdf_file='full_metadata_ontology.ttl'):
+def build_knowledge_graph(input_csv='datasets.csv', output_rdf_file='full_metadata_ontology2.ttl'):
     """
-    Build a knowledge graph from the entire metadata dataset.
+    Build a knowledge graph from the metadata dataset.
     Args:
         input_csv (str): Path to the metadata CSV file.
         output_rdf_file (str): Path to save the RDF knowledge graph.
@@ -74,13 +67,26 @@ def build_knowledge_graph(input_csv='datasets.csv', output_rdf_file='full_metada
             cleaned_publisher = preprocess_metadata(row['publisher'])
             g.add((dataset_uri, EX.publisher, Literal(cleaned_publisher)))
 
-        if pd.notna(row.get('topic')):
-            topics = [preprocess_metadata(t.strip()) for t in row['topic'].split(',')]
-            for topic in topics:
-                topic_uri = URIRef(EX[sanitize_uri_value(topic)])
-                g.add((topic_uri, RDF.type, SKOS.Concept))
-                g.add((topic_uri, SKOS.prefLabel, Literal(topic)))
-                g.add((dataset_uri, EX.hasTopic, topic_uri))
+        # Add tags (specific tagss)
+        if pd.notna(row.get('tags')):
+            tags = [preprocess_metadata(t.strip()) for t in row['tags'].split(',')]
+            for tag in tags:
+                tag_uri = URIRef(EX[sanitize_uri_value(tag)])
+                g.add((tag_uri, RDF.type, SKOS.Concept))
+                g.add((tag_uri, SKOS.prefLabel, Literal(tag)))
+                g.add((dataset_uri, EX.hasTag, tag_uri))
+
+        # Add groups (broader categories)
+        if pd.notna(row.get('groups')):
+            groups = [preprocess_metadata(group.strip()) for group in row['groups'].split(',')]
+        else:
+            groups = ["No assigned groups"]
+
+        for group in groups:
+            group_uri = URIRef(EX[sanitize_uri_value(group)])
+            g.add((group_uri, RDF.type, SKOS.Concept))
+            g.add((group_uri, SKOS.prefLabel, Literal(group)))
+            g.add((dataset_uri, EX.hasGroup, group_uri))
 
         if pd.notna(row.get('links')):
             cleaned_links = preprocess_metadata(row['links'])
