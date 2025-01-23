@@ -1,0 +1,7 @@
+https://data.london.gov.uk/download/london-average-air-quality-levels/1d9847eb-56ac-4168-9e74-93609fcee134/air-quality-london-monthly-averages.csv
+https://data.london.gov.uk/download/london-average-air-quality-levels/576175f3-b515-4c77-a6a2-6e222a3e5340/air-quality-london-time-of-day.csv
+https://data.london.gov.uk/download/breathe-london-aqmesh-pods/267507cc-9740-4ea7-be05-4d6ae16a5e4a/stationary_data.csv
+https://data.london.gov.uk/download/breathe-london-aqmesh-pods/b910476d-250e-41e9-a925-974a61b7f061/meta_data.csv
+https://data.london.gov.uk/download/estimation-health-impacts-particulate-pollution-london/cb3a6461-c432-44e6-85c9-03acf2cf46ec/particulate-air-pollution-mortality.csv
+https://data.london.gov.uk/download/air-quality-summary-statistics/e7cab585-b760-4dfd-8de4-cdff81174594/annual-objectives-by-site-and-species.csv
+https://data.london.gov.uk/download/pm2-5-map-and-exposure-data/16c88714-a2dc-4ad8-a4c9-5a1fb981ef1a/OA2_PM25_2013.csv
