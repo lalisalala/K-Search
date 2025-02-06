@@ -1,0 +1,21 @@
+query,bert_precision,bert_recall,bert_f1_score
+population growth,0.4586338698863983,0.4732457399368286,0.4448930025100708
+crime rate by borough,0.5175943374633789,0.5107347369194031,0.5137916207313538
+air pollution levels,0.0,0.0,0.0
+public transport usage,0.37861472368240356,0.5770648717880249,0.4572353661060333
+average house prices,0.0,0.0,0.0
+unemployment statistics,0.0,0.0,0.0
+NHS waiting times,0.0,0.0,0.0
+energy consumption trends,0.0,0.0,0.0
+green space data,0.0,0.0,0.0
+business startup rates,0.0,0.0,0.0
+ethnic diversity,0.0,0.0,0.0
+road traffic accidents,0.5441573858261108,0.5449271202087402,0.5445419549942017
+homelessness numbers,0.0,0.0,0.0
+broadband coverage,0.0,0.0,0.0
+waste recycling rates,0.9999999403953552,0.9999999403953552,0.9999999403953552
+tourist visits,0.0,0.0,0.0
+school performance data,0.0,0.0,0.0
+CO2 emissions,0.0,0.0,0.0
+traffic congestion,0.4606471061706543,0.4770767092704773,0.46870630979537964
+obesity rates,0.0,0.0,0.0

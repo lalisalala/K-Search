@@ -1,0 +1,391 @@
+[
+    {
+        "keyword_search": "population growth",
+        "natural_query": "Can you show me datasets about population growth?",
+        "retrieved_datasets": [
+            {
+                "title": "Global City Data",
+                "description": "A range of indicators for a selection of cities from the New York City Global City database. Dataset includes the following: Geography City Area (km2) Metro Area (km2) People City Population (millions) Metro Population (millions) Foreign Born Annual Population Growth Economy GDP Per Capita (thousands $, PPP rates, per resident) Primary Industry Secondary Industry Share of Global 500 Companies (%) Unemployment Rate Poverty Rate Transportation Public Transportation Mass Transit Commuters Major Airports Major Ports Education Students Enrolled in Higher Education Percent of Population with Higher Education (%) Higher Education Institutions Tourism Total Tourists Annually (millions) Foreign Tourists Annually (millions) Domestic Tourists Annually (millions) Annual Tourism Revenue ($US billions) Hotel Rooms (thousands) Health Infant Mortality (Deaths per 1,000 Births) Life Expectancy in Years (Male) Life Expectancy in Years (Female) Physicians per 100,000 People Number of Hospitals Anti-Smoking Legislation Culture Number of Museums Number of Cultural and Arts Organizations Environment Green Spaces (km2) Air Quality Laws or Regulations to Improve Energy Efficiency Retrofitted City Vehicle Fleet Bike Share Program",
+                "resources": [
+                    {
+                        "name": "global-city-indicators.xlsx",
+                        "url": "https://data.london.gov.uk/download/global-city-data/ffcefcba-829c-4220-911f-d4bf17ef75d6/global-city-indicators.xlsx",
+                        "format": "spreadsheet"
+                    }
+                ]
+            },
+            {
+                "title": "2011 Census Demography",
+                "description": "Reports and data on population growth and change",
+                "resources": [
+                    {
+                        "name": "household-and-ce-population.xlsx",
+                        "url": "https://data.london.gov.uk/download/2011-census-demography/1adb7c54-5916-4cd5-8649-24bd7336b6c2/household-and-ce-population.xlsx",
+                        "format": "spreadsheet"
+                    },
+                    {
+                        "name": "2011-census-comparator-chart.xls",
+                        "url": "https://data.london.gov.uk/download/2011-census-demography/61d37771-7f25-4a8e-9f66-13cb52cfacc6/2011-census-comparator-chart.xls",
+                        "format": "spreadsheet"
+                    },
+                    {
+                        "name": "london-unrounded-data.xls",
+                        "url": "https://data.london.gov.uk/download/2011-census-demography/62f62c4d-eb60-4846-9efd-1e1373641452/london-unrounded-data.xls",
+                        "format": "spreadsheet"
+                    },
+                    {
+                        "name": "population-base-tool.zip",
+                        "url": "https://data.london.gov.uk/download/2011-census-demography/9462a228-93b3-475d-9eaa-4b7eb6c84901/population-base-tool.zip",
+                        "format": "Unknown"
+                    },
+                    {
+                        "name": "2011-census-comparison-data.xls",
+                        "url": "https://data.london.gov.uk/download/2011-census-demography/e0f3aa78-10fe-4ac2-b350-62d6e47a0a9f/2011-census-comparison-data.xls",
+                        "format": "spreadsheet"
+                    },
+                    {
+                        "name": "2011-census-first-results.pdf",
+                        "url": "https://data.london.gov.uk/download/2011-census-demography/f766df3c-a1cd-42d2-9aaa-d47f7a55a51c/2011-census-first-results.pdf",
+                        "format": "pdf"
+                    },
+                    {
+                        "name": "ward-pop-ONS-GLA-Census.xls",
+                        "url": "https://data.london.gov.uk/download/2011-census-demography/fca6ccde-b2e1-411e-b2d8-a9aa79707885/ward-pop-ONS-GLA-Census.xls",
+                        "format": "spreadsheet"
+                    }
+                ]
+            },
+            {
+                "title": "Bus Use and Supply Data 1999-2022",
+                "description": "Data and technical analysis for London Assembly Transport Committee report on bus services in London (October 2013). The technical analysis published in support of the Transport Committee's report on bus services in London includes: - the number of bus passenger journeys in London compared to rest of England for 2004/5-2012/13; - annual actual and forecast bus passenger journeys and bus kilometres operated for 1999-2022; - number of annual bus passenger journeys for each London bus route from 1999/00 to 2012-13; - population growth and estimated changes in bus demand; - annual bus passenger journeys and bus subsidy levels for 2007/08-2012/13; - gross expenditure and passenger kilometeres operated per public transport mode; and - use of concessionary fare by type on London Underground and bus service.",
+                "resources": [
+                    {
+                        "name": "technical-analysis-data-bus-services.xls",
+                        "url": "https://data.london.gov.uk/download/bus-use-and-supply-data-1999-2022/5836afbe-936d-4a46-9289-39ab0892f38d/technical-analysis-data-bus-services.xls",
+                        "format": "spreadsheet"
+                    }
+                ]
+            },
+            {
+                "title": "Housing-led population projections",
+                "description": "The housing-led projections reconcile future population growth with available housing supply by incorporating a housing supply trajectory. The housing-led projections are recommended for most local planning purposes, and the 10-year variant can be considered the default variant. Users in London local authorities are able to request bespoke projections based on alternative housing scenarios through the GLA Population Projection Service. The most recent set of projections are the 2022-based round (August 2024) which comprise three variants based on different migration and fertility assumptions. All 2022-based projections are based on a common scenario of assumed future housing delivery that is derived from capacity identified in the 2017 Strategic Housing Land Availability Assessment. These projections are based on modelled back series of population estimates produced by the GLA and available here. Additional documentation, including updated information about methodologies and assumptions will be published in the coming days. For more information about these projections, see the accompanying blog post. The housing-led projections include projections for London Boroughs and London wards (2022 boundaries). The release also includes components of change (births, deaths and migration data). Documentation page Back to projections homepage",
+                "resources": [
+                    {
+                        "name": "ward_profile_index.html",
+                        "url": "https://data.london.gov.uk/download/housing-led-population-projections/0cc2c156-6b32-4fa3-856c-70f6ec4fe489/ward_profile_index.html",
+                        "format": "html"
+                    },
+                    {
+                        "name": "2022_Identified_Capacity_10yr_central_fert_std.xlsx",
+                        "url": "https://data.london.gov.uk/download/housing-led-population-projections/3605309d-ebbb-47ee-9560-a0a5e2253f4b/2022_Identified_Capacity_10yr_central_fert_std.xlsx",
+                        "format": "spreadsheet"
+                    },
+                    {
+                        "name": "results_doc.html",
+                        "url": "https://data.london.gov.uk/download/housing-led-population-projections/3e1998e2-cc52-49dd-92b1-8d768d735142/results_doc.html",
+                        "format": "html"
+                    },
+                    {
+                        "name": "Past%2520Delivery%252010-year%2520migration.xlsx",
+                        "url": "https://data.london.gov.uk/download/housing-led-population-projections/57ff8539-c875-499f-86ed-c8399b2f8f4b/Past%2520Delivery%252010-year%2520migration.xlsx",
+                        "format": "spreadsheet"
+                    },
+                    {
+                        "name": "2022-based%2520projection%2520results.html",
+                        "url": "https://data.london.gov.uk/download/housing-led-population-projections/59b3287b-925f-4b01-8b64-bdf8028f75f3/2022-based%2520projection%2520results.html",
+                        "format": "html"
+                    },
+                    {
+                        "name": "2022_Identified_Capacity_15yr_high_fert_std.xlsx",
+                        "url": "https://data.london.gov.uk/download/housing-led-population-projections/71254da7-bd46-4b7c-998f-1ab6a0f63d4b/2022_Identified_Capacity_15yr_high_fert_std.xlsx",
+                        "format": "spreadsheet"
+                    },
+                    {
+                        "name": "Identified%2520Capacity%252010-year%2520migration.xlsx",
+                        "url": "https://data.london.gov.uk/download/housing-led-population-projections/9f86b4ce-069e-44ac-ba21-c17ce4444771/Identified%2520Capacity%252010-year%2520migration.xlsx",
+                        "format": "spreadsheet"
+                    },
+                    {
+                        "name": "Housing%2520Targets%252010-year%2520migration.xlsx",
+                        "url": "https://data.london.gov.uk/download/housing-led-population-projections/ae5aad87-917c-4e62-a618-8c31315f0a22/Housing%2520Targets%252010-year%2520migration.xlsx",
+                        "format": "spreadsheet"
+                    },
+                    {
+                        "name": "2022_Identified_Capacity_5yr_low_fert_std.xlsx",
+                        "url": "https://data.london.gov.uk/download/housing-led-population-projections/e776023b-a2ca-44a0-9c0d-6bb2176889bd/2022_Identified_Capacity_5yr_low_fert_std.xlsx",
+                        "format": "spreadsheet"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "keyword_search": "crime rate by borough",
+        "natural_query": "Can you show me datasets about crime rate by borough?",
+        "retrieved_datasets": [
+            {
+                "title": "Transport Crime in London",
+                "description": "Number of crimes and crime rate by type of public transport, including bus, LU / DLR, London Overground, and London Tramlink. Monthly data released 3 months at a time at end of each quarter. The BTP is responsible for policing the rail network in London, including the TfL managed London Underground (LU), the Docklands Light Railway (DLR), London Tramlink and the London Overground (LO) services. Crime figures for the LU, DLR, London Tramlink and LO have been provided by the BTP. Crime figures for LU and DLR are reported together as these networks are policed by the same division of the BTP. The BTP only deals with crime relating to the rail and Tramlink network The MPS is responsible for policing the rest of London’s transport network, including the bus network. The figures reported for the bus network are based on official MPS figures for bus-related crime unless otherwise stated. There is no distinct category of ’bus crime’ in the MPS crime recording system. Recorded crime data is extracted from the MPS system using a complex query that searches all MPS crime for transport venue codes and those that have the word bus, bus stop, bus station and transport related words somewhere in the electronic case file. For this reason, some crimes that did not occur on the bus network will be included in the figures. This is different from the BTP as all crimes dealt with by the BTP and included on their crime recording system relate directly to the rail network. The crime volume and rate figures displayed by month are accurate according to the month they were extracted from police and TfL systems and are subject to revision due to late reporting of crimes and adjustment of crime and passenger figures. The full financial year total of figures will differ slightly as they will reflect the most accurate and up to date crime and passenger data available; hence the monthly figures here should not be used to generate full financial year totals. The adjusted financial year figures are published in the annual TfL Crime Statistics Bulletin available here. Data will be updated on a quarterly basis, showing monthly breakdowns of crime volume and rate of crime per million passenger journeys. The rate of crime per million passenger journeys is calculated by the dividing the volume of crimes by the number of passenger journeys multiplied by one million. A crime rate per million passenger journeys was unavailable for London Overground prior to April 2011 due to lack of accurate passenger journey information across the entire London Overground network. This dataset is included in the Greater London Authority's Night Time Observatory. Click here to find out more.",
+                "resources": [
+                    {
+                        "name": "public-transport-crime-london.xls",
+                        "url": "https://data.london.gov.uk/download/transport-crime-london/7691b4e9-03a6-46b6-83fd-4a17adf7385e/public-transport-crime-london.xls",
+                        "format": "spreadsheet"
+                    }
+                ]
+            },
+            {
+                "title": "Propensity for Social Exclusion of Older People in London (Report)",
+                "description": "The report looks into the various drivers of social exclusion amongst older people (although many of these indicators are equally relevant amongst all age groups) and attempts to identify areas in London where susceptibility is particularly high. Six key drivers have been included with various indicators used in an attempt to measure these. The majority of these indicators are at Lower Super Output Area (LSOA) level in an effort to identify areas at as small a geography as possible. Key Driver Indicator Description Economic Situation Income deprivation Income Deprivation Affecting Older People Score from the 2015 Indices of Deprivation Transport Accessibility Public Transport Average Public Transport Accessibility Score Car access Percentage aged 65 and over with no cars or vans in household Household Ties One person households Percentage aged 65+ living alone Providing unpaid care Percentage aged 65+ providing 50 or more hours of unpaid care a week Neighbourhood Ties Proficiency in English Percent aged 65+ who cannot speak English well Churn Rate Churn Rate: (inflow+outflow) per 100 population Health Mental health Estimated prevalence of dementia amongst population aged 65 and over (%) General health Percentage aged 65+ with a limiting long-term health problem or disability Safety Fear of crime Percentage in borough worried about anti-social behaviour in area Percentage in borough who feel unsafe walking alone after dark Crime rates Total offences per 100 population",
+                "resources": [
+                    {
+                        "name": "Propensity%2520for%2520Social%2520Exclusion%2520of%2520Older%2520People%2520in%2520London%2520Data.xlsx",
+                        "url": "https://data.london.gov.uk/download/propensity-for-social-exclusion-of-older-people-in-london--report-/57707d7d-082b-45d0-960b-b78dfff60f33/Propensity%2520for%2520Social%2520Exclusion%2520of%2520Older%2520People%2520in%2520London%2520Data.xlsx",
+                        "format": "spreadsheet"
+                    },
+                    {
+                        "name": "CIS2015-06%2520Propensity%2520for%2520Social%2520Exclusion%2520of%2520Older%2520People%2520in%2520London.pdf",
+                        "url": "https://data.london.gov.uk/download/propensity-for-social-exclusion-of-older-people-in-london--report-/de99d621-cb0e-4753-a506-275db1d1794e/CIS2015-06%2520Propensity%2520for%2520Social%2520Exclusion%2520of%2520Older%2520People%2520in%2520London.pdf",
+                        "format": "pdf"
+                    }
+                ]
+            },
+            {
+                "title": "London Ward Well-Being Scores",
+                "description": "These ward level well being scores present a combined measure of well-being indicators of the resident population based on 12 different indicators. Where possible each indicator score is compared with the England and Wales average, which is zero. Scores over 0 indicate a higher probability that the population on average will experience better well-being according to these measures. Users can adjust the weight of each indicator depending on what they consider to be the more or less important, thus generating bespoke scores. This is done either by entering a number between 0 and 10. The scores throughout the spreadsheet will update automatically. The tool combines data across a range of themes for the last five years of available data (2009-2013). Either view the results in the online interactive tool here, Or download the interactive spreadsheet here The well-being scores are then presented in a ranked bar chart for each borough, and a ward map of London. The spreadsheet also highlights wards in the top and bottom 25 per cent in London. Wards that have shown significant improvement or reduction in their scores relative to the average over the five year period are also highlighted. Borough figures are provided to assist with comparisons. Rankings and summary tables are included. The source data that the tool is based on is included in the spreadsheet. The Excel file is 8.1MB. IMPORTANT NOTE, users must enable macros when prompted upon opening the Excel spreadsheet (or reset security to medium/low) for the map to function. The rest of the tool will function without macros. If you cannot download the Excel file directly try this zip file (2.6MB). If you experience any difficulties with downloading this spreadsheet, please contact the London Datastore in the Intelligence Unit. Detailed information about definitions and sources is contained within the spreadsheet. The 12 measures included are: Health - Life Expectancy - Childhood Obesity - Incapacity Benefits claimant rate Economic security - Unemployment rate Safety - Crime rate - Deliberate Fires Education - GCSE point scores Children - Unauthorised Pupil Absence Families - Children in out-of-work households Transport - Public Transport Accessibility Scores (PTALs) Environment - Access to public open space & nature Happiness - Composite Subjective Well-being Score (Life Satisfaction, Worthwhileness, Anxiety, and Happiness) (New data only available since 2011/12) With some measures if the data shows a high figure that indicates better well-being, and with other measures a low figure indicates better well-being. Therefore scores for Life Expectancy, GCSE scores, PTALs, and Access to Public Open Space/Nature have been reversed so that in all measures low scores indicate probable lower well-being. The data has been turned into scores where each indicator in each year has a standard deviation of 10. This means that each indicator will have an equal effect on the final score when the weightings are set to equal. Why should measuring well-being be important to policy makers? Following research by the Cabinet Office and Office for National Statistics, the government is aiming to develop policy that is more focused on ‘all those things that make life worthwhile’ (David Cameron, November 2010). They are interested in developing new and better ways to understand how policy and public services affect well-being. Why measure well-being for local areas? It is important for London policy makers to consider well-being at a local level (smaller than borough level) because of the often huge differences within boroughs. Local authorities rely on small area data in order to target resources, and with local authorities currently gaining more responsibilities from government, this is of increasing importance. But small area data is also of interest to academics, independent analysts and members of the public with an interest in the subject of well-being. How can well-being be measured within small areas? The Office for National Statistics have been developing new measures of national well-being, and as part of this, at a national and regional level, the ONS has published some subjective data to measure happiness. ONS have not measured well-being for small areas, so this tool has been designed to fill this gap. However, DCLG have published a tool that models life satisfaction data for LSOAs based on a combination of national level happiness data, and 'ACORN' data. Happiness data is not available for small areas because there are no surveys large enough for this level of detail, and so at this geography the focus is on objective indicators. Data availability for small areas is far more limited than for districts, and this means the indicators that the scores are based on are not all perfect measures of well-being, though they are the best available. However, by using a relatively high number of measures across a number of years, this increases the reliability of the well-being scores. How can this tool be used to help policy makers? Each neighbourhood will have its own priorities, but the data in this tool could help provide a solid evidence base for informed local policy-making, and the distribution of regeneration funds. In addition, it could assist users to identify the causes behind an improvement in well-being in certain wards, where examples of good practice could be applied elsewhere. Differences to the previous report This is the 2013 edition of this publication, and there is one change from 2012. Indicators of Election turnout has been replaced with a composite score of subjective well-being indicators. Past versions are still available for 2011 and 2012. The rationale/methodology paper from 2011 is here. The scores from the 2012 spreadsheet are also available in PDF format. The scores in Intelligence Update 21-2012 are based on equal weightings across each measure. This tool was created by the GLA Intelligence Unit. Please contact datastore@london.gov.uk for more information.",
+                "resources": [
+                    {
+                        "name": "london-ward-well-being-probability-scores.zip",
+                        "url": "https://data.london.gov.uk/download/london-ward-well-being-scores/2d3766d8-8a58-47d3-b505-dd243559c931/london-ward-well-being-probability-scores.zip",
+                        "format": "zip"
+                    },
+                    {
+                        "name": "london-ward-well-being-probability-scores.xls",
+                        "url": "https://data.london.gov.uk/download/london-ward-well-being-scores/45c7421c-c6de-4ffd-8484-eed623c1731d/london-ward-well-being-probability-scores.xls",
+                        "format": "spreadsheet"
+                    },
+                    {
+                        "name": "74bb106b-af26-4c6f-b37b-3951bf2d15fe",
+                        "url": "https://data.london.gov.uk/download/london-ward-well-being-scores/74bb106b-af26-4c6f-b37b-3951bf2d15fe",
+                        "format": "html"
+                    }
+                ]
+            },
+            {
+                "title": "Ward Profiles and Atlas",
+                "description": "The ward profiles and ward atlas provide a range of demographic and related data for each ward in Greater London. They are designed to provide an overview of the population in these small areas by presenting a range of data on the population, diversity, households, life expectancy, housing, crime, benefits, land use, deprivation, and employment. Indicators included here are population by age and sex, land area, projections, population density, household composition, religion, ethnicity, birth rates (general fertility rate), death rates (standardised mortality ratio), life expectancy, average house prices, properties sold, housing by council tax band, tenure, property size (bedrooms), dwelling build period and type, mortgage and landlord home repossession, employment and economic activity, Incapacity Benefit, Housing Benefit, Household income, Income Support and JobSeekers Allowance claimant rates, dependent children receiving child-tax credits by lone parents and out-of-work families, child poverty, National Insurance Number registration rates for overseas nationals (NINo), GCSE results, A-level / Level 3 results (average point scores), pupil absence, child obesity, crime rates (by type of crime), fires, ambulance call outs, road casualties, happiness and well-being, land use, public transport accessibility (PTALs), access to public greenspace, access to nature, air emissions / quality, car use, bicycle travel, Indices of Deprivation, and election turnout. The Ward Profiles present key summary measures for the most recent year, using both Excel and InstantAtlas mapping software. This is a useful tool for displaying a large amount of data for numerous geographies, in one place. The Ward Atlas presents a more detailed version of the data including trend data and generally includes the raw numbers as opposed to percentages or rates. The Instant Atlas reports use HTML5 technology, which can be used in modern browsers, including on Apple machines, but will not function on older browsers. WARD ATLAS FOR 2014 BOUNDARIES In May 2014, ward boundaries changed in Hackney, Kensington and Chelsea, and Tower Hamlets. This version of the ward atlas gives data for these new wards, as well as retaining data on the unchanged wards in the rest of London for comparison purposes. Data for boroughs has also been included. Very few datasets have been published for the new ward boundaries, so the majority of data contained in this atlas have been modelled using a method of proportion of households from the old boundaries that are located in the new boundaries. Therefore, the data contained in this atlas are indicative only. Instant Atlas for 2014 Ward Atlas Tips: - Select a new indicator from the Data box on the left. Select the theme, then indicator and then year to show the data. - To view data just for one borough*, use the filter tool. - Some legend settings can be altered by clicking on the cog icon next to the Wards tick box within the map legend. - The wards can be ranked in order by clicking at the top of the indicator column of the data table. Note: Additional indicator information and sources are included within the spreadsheet and Instant Atlas report. OTHER SMALL AREA PROFILES Other profiles available include Borough, LSOA and MSOA atlases. Data from these profiles were used to create the Well-being scores tool. *The London boroughs are: City of London, Barking and Dagenham, Barnet, Bexley, Brent, Bromley, Camden, Croydon, Ealing, Enfield, Greenwich, Hackney, Hammersmith and Fulham, Haringey, Harrow, Havering, Hillingdon, Hounslow, Islington, Kensington and Chelsea, Kingston upon Thames, Lambeth, Lewisham, Merton, Newham, Redbridge, Richmond upon Thames, Southwark, Sutton, Tower Hamlets, Waltham Forest, Wandsworth, Westminster. These profiles were created using the most up to date information available at the time of collection (September 2015).",
+                "resources": [
+                    {
+                        "name": "ward-atlas-2014boundaries.xls",
+                        "url": "https://data.london.gov.uk/download/ward-profiles-and-atlas/0c4fdad3-b547-4add-958d-86e6b19f3a3c/ward-atlas-2014boundaries.xls",
+                        "format": "spreadsheet"
+                    },
+                    {
+                        "name": "ward-atlas-data.csv",
+                        "url": "https://data.london.gov.uk/download/ward-profiles-and-atlas/150584ff-3509-4e17-91d1-315ed4557419/ward-atlas-data.csv",
+                        "format": "csv"
+                    },
+                    {
+                        "name": "ward-atlas-data.xls",
+                        "url": "https://data.london.gov.uk/download/ward-profiles-and-atlas/5a367ec8-3bdb-4216-9f75-8368a00fe6a2/ward-atlas-data.xls",
+                        "format": "spreadsheet"
+                    },
+                    {
+                        "name": "ward-profiles-excel-version.csv",
+                        "url": "https://data.london.gov.uk/download/ward-profiles-and-atlas/772d2d64-e8c6-46cb-86f9-e52b4c7851bc/ward-profiles-excel-version.csv",
+                        "format": "csv"
+                    },
+                    {
+                        "name": "ward-profiles-excel-version.xls",
+                        "url": "https://data.london.gov.uk/download/ward-profiles-and-atlas/a187b63e-bf4f-4449-b644-ab86a0a8569d/ward-profiles-excel-version.xls",
+                        "format": "spreadsheet"
+                    },
+                    {
+                        "name": "GLA-ward-profiles.pdf",
+                        "url": "https://data.london.gov.uk/download/ward-profiles-and-atlas/d84886f8-c269-4fea-9b70-3884a1c7278f/GLA-ward-profiles.pdf",
+                        "format": "pdf"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "keyword_search": "air pollution levels",
+        "natural_query": "Can you show me datasets about air pollution levels?",
+        "retrieved_datasets": []
+    },
+    {
+        "keyword_search": "public transport usage",
+        "natural_query": "Can you show me datasets about public transport usage?",
+        "retrieved_datasets": [
+            {
+                "title": "Coronavirus (COVID-19) Mobility Report",
+                "description": "Due to changes in the collection and availability of data on COVID-19, this website will no longer be updated. The webpage will no longer be available as of 11 May 2023. On-going, reliable sources of data for COVID-19 are available via the COVID-19 dashboard and the UKHSA ﻿ GLA Covid-19 Mobility Report Since March 2020, London has seen many different levels of restrictions - including three separate lockdowns and many other tiers/levels of restrictions, as well as easing of restrictions and even measures to actively encourage people to go to work, their high streets and local restaurants. This reports gathers data from a number of sources, including google, apple, citymapper, purple wifi and opentable to assess the extent to which these levels of restrictions have translated to a reductions in Londoners' movements. The data behind the charts below come from different sources. None of these data represent a direct measure of how well people are adhering to the lockdown rules - nor do they provide an exhaustive data set. Rather, they are measures of different aspects of mobility, which together, offer an overall impression of how people Londoners are moving around the capital. The information is broken down by use of public transport, pedestrian activity, retail and leisure, and homeworking. Public Transport For the transport measures, we have included data from google, Apple, CityMapper and Transport for London. They measure different aspects of public transport usage - depending on the data source. Each of the lines in the chart below represents a percentage of a pre-pandemic baseline. activity Source Latest Baseline Min value in Lockdown 1 Min value in Lockdown 2 Min value in Lockdown 3 Citymapper Citymapper mobility index 2021-09-05 Compares trips planned and trips taken within its app to a baseline of the four weeks from 6 Jan 2020 7.9% 28% 19% Google Google Mobility Report 2022-10-15 Location data shared by users of Android smartphones, compared time and duration of visits to locations to the median values on the same day of the week in the five weeks from 3 Jan 2020 20.4% 40% 27% TfL Bus Transport for London 2022-10-30 Bus journey ‘taps' on the TfL network compared to same day of the week in four weeks starting 13 Jan 2020 - 34% 24% TfL Tube Transport for London 2022-10-30 Tube journey ‘taps' on the TfL network compared to same day of the week in four weeks starting 13 Jan 2020 - 30% 21% Pedestrian activity With the data we currently have it's harder to estimate pedestrian activity and high street busyness. A few indicators can give us information on how people are making trips out of the house: activity Source Latest Baseline Min value in Lockdown 1 Min value in Lockdown 2 Min value in Lockdown 3 Walking Apple Mobility Index 2021-11-09 estimates the frequency of trips made on foot compared to baselie of 13 Jan '20 22% 47% 36% Parks Google Mobility Report 2022-10-15 Frequency of trips to parks. Changes in the weather mean this varies a lot. Compared to baseline of 5 weeks from 3 Jan '20 30% 55% 41% Retail & Rec Google Mobility Report 2022-10-15 Estimates frequency of trips to shops/leisure locations. Compared to baseline of 5 weeks from 3 Jan '20 30% 55% 41% Retail and recreation In this section, we focus on estimated footfall to shops, restaurants, cafes, shopping centres and so on. activity Source Latest Baseline Min value in Lockdown 1 Min value in Lockdown 2 Min value in Lockdown 3 Grocery/pharmacy Google Mobility Report 2022-10-15 Estimates frequency of trips to grovery shops and pharmacies. Compared to baseline of 5 weeks from 3 Jan '20 32% 55.00% 45.000% Retail/rec Google Mobility Report 2022-10-15 Estimates frequency of trips to shops/leisure locations. Compared to baseline of 5 weeks from 3 Jan '20 32% 55.00% 45.000% Restaurants OpenTable State of the Industry 2022-02-19 London restaurant bookings made through OpenTable 0% 0.17% 0.024% Home Working The Google Mobility Report estimates changes in how many people are staying at home and going to places of work compared to normal. It's difficult to translate this into exact percentages of the population, but changes back towards ‘normal' can be seen to start before any lockdown restrictions were lifted. This value gives a seven day rolling (mean) average to avoid it being distorted by weekends and bank holidays. name Source Latest Baseline Min/max value in Lockdown 1 Min/max value in Lockdown 2 Min/max value in Lockdown 3 Residential Google Mobility Report 2022-10-15 Estimates changes in how many people are staying at home for work. Compared to baseline of 5 weeks from 3 Jan '20 131% 119% 125% Workplaces Google Mobility Report 2022-10-15 Estimates changes in how many people are going to places of work. Compared to baseline of 5 weeks from 3 Jan '20 24% 54% 40% Restriction Date end_date Average Citymapper Average homeworking Work from home advised 17 Mar '20 21 Mar '20 57% 118% Schools, pubs closed 21 Mar '20 24 Mar '20 34% 119% UK enters first lockdown 24 Mar '20 10 May '20 10% 130% Some workers encouraged to return to work 10 May '20 01 Jun '20 15% 125% Schools open, small groups outside 01 Jun '20 15 Jun '20 19% 122% Non-essential businesses re-open 15 Jun '20 04 Jul '20 24% 120% Hospitality reopens 04 Jul '20 03 Aug '20 34% 115% Eat out to help out scheme begins 03 Aug '20 08 Sep '20 44% 113% Rule of 6 08 Sep '20 24 Sep '20 53% 111% 10pm Curfew 24 Sep '20 15 Oct '20 51% 112% Tier 2 (High alert) 15 Oct '20 05 Nov '20 49% 113% Second Lockdown 05 Nov '20 02 Dec '20 31% 118% Tier 2 (High alert) 02 Dec '20 19 Dec '20 45% 115% Tier 4 (Stay at home advised) 19 Dec '20 05 Jan '21 22% 124% Third Lockdown 05 Jan '21 08 Mar '21 22% 122% Roadmap 1 08 Mar '21 29 Mar '21 29% 118% Roadmap 2 29 Mar '21 12 Apr '21 36% 117% Roadmap 3 12 Apr '21 17 May '21 51% 113% Roadmap out of lockdown: Step 3 17 May '21 19 Jul '21 65% 109% Roadmap out of lockdown: Step 4 19 Jul '21 07 Nov '22 68% 107%",
+                "resources": [
+                    {
+                        "name": "activity_transport.csv",
+                        "url": "https://data.london.gov.uk/download/coronavirus-covid-19-mobility-report/20bb3a40-20ae-4020-984a-def0c7f4afd1/activity_transport.csv",
+                        "format": "csv"
+                    },
+                    {
+                        "name": "activity_retail.csv",
+                        "url": "https://data.london.gov.uk/download/coronavirus-covid-19-mobility-report/57a99c05-d23c-44ea-a08e-0e18310e3b2d/activity_retail.csv",
+                        "format": "csv"
+                    },
+                    {
+                        "name": "activity_homeworking.csv",
+                        "url": "https://data.london.gov.uk/download/coronavirus-covid-19-mobility-report/a2c9e114-28e6-43d6-802c-9602c9ca50c5/activity_homeworking.csv",
+                        "format": "csv"
+                    },
+                    {
+                        "name": "activity_footfall.csv",
+                        "url": "https://data.london.gov.uk/download/coronavirus-covid-19-mobility-report/c2c0d71f-2ec3-4fdf-844f-de27798495e6/activity_footfall.csv",
+                        "format": "csv"
+                    },
+                    {
+                        "name": "Homeworking%2520by%2520month.xlsx",
+                        "url": "https://data.london.gov.uk/download/coronavirus-covid-19-mobility-report/d8a7d25d-a92a-43d1-b487-640ef8df01cc/Homeworking%2520by%2520month.xlsx",
+                        "format": "spreadsheet"
+                    },
+                    {
+                        "name": "activity_footfall_by_age.csv",
+                        "url": "https://data.london.gov.uk/download/coronavirus-covid-19-mobility-report/e00070cd-5d56-4a7d-9126-6a7198d88fcd/activity_footfall_by_age.csv",
+                        "format": "csv"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "keyword_search": "average house prices",
+        "natural_query": "Can you show me datasets about average house prices?",
+        "retrieved_datasets": []
+    },
+    {
+        "keyword_search": "unemployment statistics",
+        "natural_query": "Can you show me datasets about unemployment statistics?",
+        "retrieved_datasets": []
+    },
+    {
+        "keyword_search": "NHS waiting times",
+        "natural_query": "Can you show me datasets about NHS waiting times?",
+        "retrieved_datasets": []
+    },
+    {
+        "keyword_search": "energy consumption trends",
+        "natural_query": "Can you show me datasets about energy consumption trends?",
+        "retrieved_datasets": []
+    },
+    {
+        "keyword_search": "green space data",
+        "natural_query": "Can you show me datasets about green space data?",
+        "retrieved_datasets": []
+    },
+    {
+        "keyword_search": "business startup rates",
+        "natural_query": "Can you show me datasets about business startup rates?",
+        "retrieved_datasets": []
+    },
+    {
+        "keyword_search": "ethnic diversity",
+        "natural_query": "Can you show me datasets about ethnic diversity?",
+        "retrieved_datasets": []
+    },
+    {
+        "keyword_search": "road traffic accidents",
+        "natural_query": "Can you show me datasets about road traffic accidents?",
+        "retrieved_datasets": [
+            {
+                "title": "Incidents attended by LFB, by type and borough",
+                "description": "London Fire Brigade (LFB) data covering all incidents attended by month back to January 2013, broken down by incident type: All fires attended - broken down by primary* and secondary fires Deliberate fires attended Dwelling & non-dwelling fires attended False alarms attended Road Traffic Accidents attended Vehicle fires attended - broken down by deliberate/accidental/unknown Open space fires attended - broken down by deliberate/accidental/unknown Rubbish fires attended - broken down by deliberate/accidental/unknown Shut-in-lifts attended Special services - non-emergency visits *Primary fires comprise of all fires attended by LFB in buildings, vehicles and outdoor structures, and fires involving casualties, and fires attended by five or more appliances. The statistics include some incidents that are not geo-referenced (with a borough name). Sometimes incidents are geo-coded later, and so the data can change each month, and data for more recent periods must be regarded as provisional. Data are available in raw machine-readable (csv) format.",
+                "resources": [
+                    {
+                        "name": "LFB_Datastore.csv",
+                        "url": "https://data.london.gov.uk/download/fire-and-rescue-services-incidents-attended-borough/b8741a9e-dcfd-435f-98df-f147ea42e21e/LFB_Datastore.csv",
+                        "format": "csv"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "keyword_search": "homelessness numbers",
+        "natural_query": "Can you show me datasets about homelessness numbers?",
+        "retrieved_datasets": []
+    },
+    {
+        "keyword_search": "broadband coverage",
+        "natural_query": "Can you show me datasets about broadband coverage?",
+        "retrieved_datasets": []
+    },
+    {
+        "keyword_search": "waste recycling rates",
+        "natural_query": "Can you show me datasets about waste recycling rates?",
+        "retrieved_datasets": [
+            {
+                "title": "Household Waste Recycling Rates, Borough",
+                "description": "Table shows the proportion of collected household waste which is recycled or composted. Figures for 2004/5 were taken from the London Councils organisation as the Department for Environment, Food & Rural Affairs (DEFRA) do not list complete LA level statistics for this year. From 1998/99 to 2003/04 estimates for household waste recycling (including composting) rates are based on data supplied to the annual DEFRA Municipal Waste Management Survey. From 1998/99 to 2001/02 figures revised since previous publication. Recycling/composting rates for 1998-99 were first published in Annex A of \"Guidance in Municipal Waste Management Strategies\" published by DEFRA in March 2001 and 1999/00 rates in Annex B of the consultation paper on \"Distribution of the £140 Million Waste Minimisation and Recycling Fund\", available from https://www.gov.uk/government/collections/waste-and-recycling-statistics The recycling rate is calculated as set out below. For Waste Collection Authorities (WCA) and Unitary Authorities (UA): X/Y x 100, where: X = Tonnage of household waste collected by the WCA or UA which is sent for recycling/composting (including private/voluntary collections of household waste for recycling) Y = Total tonnage of household waste collected by the WCA or UA (including private/voluntary collections of household waste for recycling) For Waste Disposal Authorities (WDA): X/Y x 100, where: X = Tonnage of household waste collected by the WDA which is sent for recycling plus tonnage of household waste which is sent for recycling by the constituent WCAs (including private/voluntary collections of household waste for recycling) Y = Total tonnage of household waste collected at Civic Amenity sites by the WDA plus total tonnage of household waste collected by constituent WCAs (including private/voluntary collections of household waste for recycling) Annual Results for Local authority collected waste management published by are available here. For more Local Authority Waste and Recycling Information visit the WRAP Portal. The site is accessible to the public but does require registration on the first visit.",
+                "resources": [
+                    {
+                        "name": "Household-rcycling-borough.csv",
+                        "url": "https://data.london.gov.uk/download/household-waste-recycling-rates-borough/15ddc38a-0a37-4f69-98b5-e69e549b39d3/Household-rcycling-borough.csv",
+                        "format": "csv"
+                    },
+                    {
+                        "name": "household-recycling-borough%2520%25283%2529.xlsx",
+                        "url": "https://data.london.gov.uk/download/household-waste-recycling-rates-borough/6f7bc5cd-217b-4eed-9450-af086f17908e/household-recycling-borough%2520%25283%2529.xlsx",
+                        "format": "spreadsheet"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "keyword_search": "tourist visits",
+        "natural_query": "Can you show me datasets about tourist visits?",
+        "retrieved_datasets": []
+    },
+    {
+        "keyword_search": "school performance data",
+        "natural_query": "Can you show me datasets about school performance data?",
+        "retrieved_datasets": []
+    },
+    {
+        "keyword_search": "CO2 emissions",
+        "natural_query": "Can you show me datasets about CO2 emissions?",
+        "retrieved_datasets": []
+    },
+    {
+        "keyword_search": "traffic congestion",
+        "natural_query": "Can you show me datasets about traffic congestion?",
+        "retrieved_datasets": [
+            {
+                "title": "Key Performance Indicators on the TFL Road Network",
+                "description": "This dataset will no longer be updated. Selected key performance indicators on the TFL Road Network. Number of hours of Serious and Severe Disruption on the road network by planned and unplanned status, journey time reliability, and total number of works undertaken on the road network. TLRN = TFL Road Network The maximum permissibile total number of road works allowed on the TLRN was capped at 3,250 for any one period, in Period 1 of 2013/14 until the end of the financial year 2014/15. This is a reduction of 13.4 per cent from the cap of 3,753 that applied from Period 7 2011/12 to the end of financial year 2012/13. The key measure for monitoring smoothing traffic flow is journey time reliability. It is defined as the percentage of journeys completed within an allowable excess of 5 minutes for a standard 30 minute journey during the AM peak. Serious congestion. There is traffic congestion that is unusual for the time of day at the location or in an area and traffic has been stopped for less than 5 minutes - but in excess of the red signal time displayed on the traffic signals operating on the road. Severe congestion. There is traffic congestion that is unusual for the time of day at the location or in an area and traffic has been stopped for more than 5 minutes; and traffic queuing is longer than normal for the time of day, more than for ‘serious’ congestion. TFL also publish annual reports on road safety here.",
+                "resources": [
+                    {
+                        "name": "tfl-surface-transport.xls",
+                        "url": "https://data.london.gov.uk/download/key-performance-indicators-tfl-road-network/11917f7b-cf49-4bbc-a38a-68edf906b440/tfl-surface-transport.xls",
+                        "format": "spreadsheet"
+                    }
+                ]
+            },
+            {
+                "title": "Breathe London Mobile Monitoring",
+                "description": "Two Google Street View cars, equipped with reference-type air quality monitors, are measuring air pollution over approximately 600 eight-hour shifts between autumn 2018 and autumn 2019. The cars use fast-response, research-grade instruments to precisely measure pollution concentrations approximately every 1-10 seconds. Pollutants measured include black carbon (BC), CO₂, NO, NO₂, O3, PM2.5 (and other PM size ranges) on a variety of London roadways. The National Physical Laboratory is responsible for regular checks of instrument performance and periodic calibrations. The cars are collecting data from early morning to late evening, Monday to Friday – providing a representative view of on-road air pollution during these hours. The mobile monitoring routes are sampled at different times of day, days of week and time of year – with a target of achieving a minimum of approximately 15 passes of each route over the course of the study (however, traffic congestion and other factors may reduce this number). More information can be found on the Breathe London website.",
+                "resources": [
+                    {
+                        "name": "mobile_data.zip",
+                        "url": "https://data.london.gov.uk/download/breathe-london-mobile-monitoring/4a586a45-8ab7-4b9b-a9b8-7262479b11cb/mobile_data.zip",
+                        "format": "zip"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "keyword_search": "obesity rates",
+        "natural_query": "Can you show me datasets about obesity rates?",
+        "retrieved_datasets": []
+    }
+]

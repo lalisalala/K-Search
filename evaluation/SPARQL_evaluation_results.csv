@@ -1,0 +1,21 @@
+query,precision,recall,f1_score
+population growth,0.4444444444444444,0.42105263157894735,0.43243243243243246
+crime rate by borough,0.08333333333333333,0.004878048780487805,0.009216589861751152
+air pollution levels,0.0,0.0,0.0
+public transport usage,0.0,0.0,0.0
+average house prices,0.0,0.0,0.0
+unemployment statistics,0.0,0.0,0.0
+NHS waiting times,0.0,0.0,0.0
+energy consumption trends,0.0,0.0,0.0
+green space data,0.0,0.0,0.0
+business startup rates,0.0,0.0,0.0
+ethnic diversity,0.0,0.0,0.0
+road traffic accidents,0.0,0.0,0.0
+homelessness numbers,0.0,0.0,0.0
+broadband coverage,0.0,0.0,0.0
+waste recycling rates,0.0,0.0,0.0
+tourist visits,0.0,0.0,0.0
+school performance data,0.0,0.0,0.0
+CO2 emissions,0.0,0.0,0.0
+traffic congestion,0.0,0.0,0.0
+obesity rates,0.0,0.0,0.0

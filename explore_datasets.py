@@ -115,12 +115,13 @@ def generate_llm_prompt_from_dataset(df, user_question):
     sample_data = df.head(5).to_string(index=False)
 
     prompt = (
+        f"You are an assistant for open data portals helping users find and understand datasets of this portal. "
         f"The dataset has {df.shape[0]} rows and {df.shape[1]} columns. "
         f"Columns: {column_names}.\n"
         f"Missing values per column: {missing_values}.\n"
         f"Here is a sample of the data:\n{sample_data}\n\n"
         f"User Question: {user_question}\n"
-        f"Please analyze the dataset and provide a detailed response."
+        f"Please analyze the dataset based on the user question and provide a detailed response."
     )
     return prompt
 
